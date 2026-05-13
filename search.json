@@ -1,0 +1,102 @@
+[
+  {
+    "objectID": "Introduction to RavenPro.html",
+    "href": "Introduction to RavenPro.html",
+    "title": "Introduction to RavenPro",
+    "section": "",
+    "text": "Raven Pro is a software program for the acquisition, visualization, measurement, and analysis of sounds developed by the K. Lisa Yang Center for Conservation Bioacoustics at the Cornell Lab of Ornithology. Open RavenPro, which will have an a desktop icon like this: \nRavenPro should open to a blank workbench (Figure 1).\n\n\n\nFigure 1. Opening screen on the RavenPro software.\n\n\nThere are many components and configurations for the RavenPro software. Included in these docs are the main components that we’ll use. For a more detailed tutorial of RavenPro, please see its user manual.",
+    "crumbs": [
+      "Introduction to RavenPro"
+    ]
+  },
+  {
+    "objectID": "Introduction to RavenPro.html#getting-started-in-ravenpro",
+    "href": "Introduction to RavenPro.html#getting-started-in-ravenpro",
+    "title": "Introduction to RavenPro",
+    "section": "",
+    "text": "Raven Pro is a software program for the acquisition, visualization, measurement, and analysis of sounds developed by the K. Lisa Yang Center for Conservation Bioacoustics at the Cornell Lab of Ornithology. Open RavenPro, which will have an a desktop icon like this: \nRavenPro should open to a blank workbench (Figure 1).\n\n\n\nFigure 1. Opening screen on the RavenPro software.\n\n\nThere are many components and configurations for the RavenPro software. Included in these docs are the main components that we’ll use. For a more detailed tutorial of RavenPro, please see its user manual.",
+    "crumbs": [
+      "Introduction to RavenPro"
+    ]
+  },
+  {
+    "objectID": "Analog Digitization.html",
+    "href": "Analog Digitization.html",
+    "title": "Analog Digitization",
+    "section": "",
+    "text": "Out of the total ~7,000 hours of PAM data, ~2,600 hours were recorded using cassette tapes. Cassette tapes are not a reliable analog format. Cassettes will degrade with time, which is why it’s critical that we preserve the PAM data in a digital format before the cassette tapes are no longer able to be digitized! Having a fully digitized PAM dataset which was consistently collected for 25 years will provide important basic knowledge on nocturnal vocalizing taxa for conservation management initiatives.",
+    "crumbs": [
+      "Analog Digitization"
+    ]
+  },
+  {
+    "objectID": "Analog Digitization.html#introduction",
+    "href": "Analog Digitization.html#introduction",
+    "title": "Analog Digitization",
+    "section": "",
+    "text": "Out of the total ~7,000 hours of PAM data, ~2,600 hours were recorded using cassette tapes. Cassette tapes are not a reliable analog format. Cassettes will degrade with time, which is why it’s critical that we preserve the PAM data in a digital format before the cassette tapes are no longer able to be digitized! Having a fully digitized PAM dataset which was consistently collected for 25 years will provide important basic knowledge on nocturnal vocalizing taxa for conservation management initiatives.",
+    "crumbs": [
+      "Analog Digitization"
+    ]
+  },
+  {
+    "objectID": "Analog Digitization.html#using-the-portable-cassette-player",
+    "href": "Analog Digitization.html#using-the-portable-cassette-player",
+    "title": "Analog Digitization",
+    "section": "Using the portable cassette player",
+    "text": "Using the portable cassette player\nWe use portable cassette players to digitize the cassette tapes. These are handheld and seem to do a good enough job at preserving frequency with its corresponding acoustic signal.\n\nThe cassette player plays the tape in real time (e.g., if the tape is 30 minutes long, it will take 30 minutes to digitize) and records the output onto an sd card. Below are some common features of the player:\n\n\n\nThere is a small lip that opens the cassette player.\n\n\n\n\n\nThe sd card is housed on the side of the cassette player with the on/off button.\n\n\n\n\n\nSoftly press the sd card to release it from the cassette player.\n\n\n\n\n\nThe sd case has a corresponding thumbdrive to connect to a computer and view the recordings on RavenPro.",
+    "crumbs": [
+      "Analog Digitization"
+    ]
+  },
+  {
+    "objectID": "Analog Digitization.html#digitization-steps",
+    "href": "Analog Digitization.html#digitization-steps",
+    "title": "Analog Digitization",
+    "section": "Digitization Steps",
+    "text": "Digitization Steps",
+    "crumbs": [
+      "Analog Digitization"
+    ]
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "If it’s your first time annotating and identifying Orthoptera, start with this brief background of the project and then the Introduction to RavenPro page. This website is a collection of resources to help new and existing annotators learn Orthoptera ID, use RavenPro, and annotate acoustic signals well enough to train a convolutional neural network (CNN) for automated ID.",
+    "crumbs": [
+      "About"
+    ]
+  },
+  {
+    "objectID": "about.html#how-to-use-these-docs",
+    "href": "about.html#how-to-use-these-docs",
+    "title": "About",
+    "section": "",
+    "text": "If it’s your first time annotating and identifying Orthoptera, start with this brief background of the project and then the Introduction to RavenPro page. This website is a collection of resources to help new and existing annotators learn Orthoptera ID, use RavenPro, and annotate acoustic signals well enough to train a convolutional neural network (CNN) for automated ID.",
+    "crumbs": [
+      "About"
+    ]
+  },
+  {
+    "objectID": "about.html#project-background",
+    "href": "about.html#project-background",
+    "title": "About",
+    "section": "Project Background",
+    "text": "Project Background\nOrthoptera (crickets, katydids, grasshoppers, locusts) are declining more rapidly than other insect taxa and are an important part of soundscapes, the collective noises in an ecosystem that can indicate its health. Orthoptera provide numerous ecosystem functions and services including nutrient cycling, trophic support as food sources, entomophagy, and seed dispersal. Because they are sensitive to environmental change, they are declining more rapidly than other insect groups, with estimates reaching 2.1-2.7% per year (Welti et al. 2020). This sensitivity also makes them good bioindicators (Riede 1998, McNeil and Grozinger 2020) to be used as a tool for broader conservation management (Menz et al. 2013). Despite their importance to ecosystem function, there is limited consistent and long-term monitoring data for Orthoptera, especially for nocturnal species (e.g. katydids and crickets).\n\nWe will leverage a 25-year time series dataset of soundscape recordings – originally meant to collect amphibian calls—collected by USDA biologists in eastern Texas to measure the trends in Orthopteran communities over the last two decades to build stronger conclusions about community change and suspected decline alongside other environmental drivers (e.g., climate and land use change).\n\n\nAs annotators, our objective is to apply a pre-trained convolutional neural network (CNN)—a form of AI—to automatically ID Orthopteran stridulation patterns in digital and analog recordings. The stridulation patterns look similar to the image below, where each band of energy has a morphological pattern and occurs at a given frequency between 0 and ~8 kHz.\n\nThe total dataset is ~ 7,200 hours, but our goal is to taxonomically identify a subset of the data (a few hundred hours) to teach the CNN model to identify the rest of the 7,200 hours of recordings. We will listen to and annotate a subset of recordings from a 25-year dataset using the RavenPro sound analysis tool. The training data will feed into a pre-trained CNN network, BirdNet, originally developed for bird identification—both tools were developed by the K. Lisa Yang Center for Conservation Bioacoustics.\nOh, and recordings from 2000-2008 are in analog cassette format so we will be digitizing those as well! When completed this will be the largest consistent PAM dataset for Orthoptera in the world, and will inform conservation management endeavors for this taxa.",
+    "crumbs": [
+      "About"
+    ]
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Welcome to the Orthoptera Bioacoustics Docs",
+    "section": "",
+    "text": "Welcome to the Orthoptera Bioacoustics Docs\nThis is a collaborative project through the Grames Lab at Binghamton Univeristy to restore a long-term passive acoustic monitoring (PAM) dataset to better understand spatial and temporal patterns in the nocturnal Orthopterans (crickets and katydids) of eastern Texas.\nContinue to the About page to get an introduction and background to the project.",
+    "crumbs": [
+      "Home"
+    ]
+  }
+]
