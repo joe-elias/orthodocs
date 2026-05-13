@@ -1,0 +1,25 @@
+project:
+  type: website
+
+website:
+  title: "Orthoptera Bioacoustics Docs"
+  sidebar:
+    style: "floating"
+    search: True
+    contents:
+      - href: index.qmd
+        text: Home
+      - about.qmd
+      - Introduction to RavenPro.qmd
+      - Analog Digitization.qmd
+
+format:
+  html:
+    theme:
+      - cosmo
+      - brand
+    css: styles.css
+    toc: true
+
+editor: visual
+

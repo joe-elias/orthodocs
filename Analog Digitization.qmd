@@ -1,0 +1,25 @@
+---
+title: "Analog Digitization"
+---
+
+## Introduction 
+
+Out of the total \~7,000 hours of PAM data, \~2,600 hours were recorded using cassette tapes. Cassette tapes are not a reliable analog format. Cassettes will degrade with time, which is why it's critical that we preserve the PAM data in a digital format before the cassette tapes are no longer able to be digitized! Having a fully digitized PAM dataset which was consistently collected for 25 years will provide important basic knowledge on nocturnal vocalizing taxa for conservation management initiatives.
+
+## Using the portable cassette player
+
+We use portable cassette players to digitize the cassette tapes. These are handheld and seem to do a good enough job at preserving frequency with its corresponding acoustic signal.
+
+![](images/digitization/tape_player.JPG)
+
+The cassette player plays the tape in real time (e.g., if the tape is 30 minutes long, it will take 30 minutes to digitize) and records the output onto an sd card. Below are some common features of the player:
+
+![There is a small lip that opens the cassette player.](images/digitization/IMG_8124.jpg)
+
+![The sd card is housed on the side of the cassette player with the on/off button.](images/digitization/IMG_8125.jpg)
+
+![Softly press the sd card to release it from the cassette player.](images/digitization/IMG_8130.jpg)
+
+![The sd case has a corresponding thumbdrive to connect to a computer and view the recordings on RavenPro.](images/digitization/IMG_8131.JPG)
+
+## Digitization Steps 
