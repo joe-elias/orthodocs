@@ -145,7 +145,14 @@ ul.task-list li input[type="checkbox"] {
   <ul>
   <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a></li>
   <li><a href="#using-the-portable-cassette-player" id="toc-using-the-portable-cassette-player" class="nav-link" data-scroll-target="#using-the-portable-cassette-player">Using the portable cassette player</a></li>
-  <li><a href="#digitization-steps" id="toc-digitization-steps" class="nav-link" data-scroll-target="#digitization-steps">Digitization Steps</a></li>
+  <li><a href="#digitization-steps" id="toc-digitization-steps" class="nav-link" data-scroll-target="#digitization-steps">Digitization Steps</a>
+  <ul class="collapse">
+  <li><a href="#record-the-metadata-for-each-tape" id="toc-record-the-metadata-for-each-tape" class="nav-link" data-scroll-target="#record-the-metadata-for-each-tape">1. Record the metadata for each tape</a></li>
+  <li><a href="#insert-the-cassette-tape" id="toc-insert-the-cassette-tape" class="nav-link" data-scroll-target="#insert-the-cassette-tape">2. Insert the cassette tape</a></li>
+  <li><a href="#rewind-or-fast-forward-the-tape-to-the-beginning" id="toc-rewind-or-fast-forward-the-tape-to-the-beginning" class="nav-link" data-scroll-target="#rewind-or-fast-forward-the-tape-to-the-beginning">3. Rewind or fast forward the tape to the beginning</a></li>
+  <li><a href="#press-play-and-record" id="toc-press-play-and-record" class="nav-link" data-scroll-target="#press-play-and-record">4. Press play and record</a></li>
+  <li><a href="#verify-and-rename-the-recording" id="toc-verify-and-rename-the-recording" class="nav-link" data-scroll-target="#verify-and-rename-the-recording">5. Verify and rename the recording</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -207,8 +214,62 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="digitization-steps" class="level2">
 <h2 class="anchored" data-anchor-id="digitization-steps">Digitization Steps</h2>
+<section id="record-the-metadata-for-each-tape" class="level3">
+<h3 class="anchored" data-anchor-id="record-the-metadata-for-each-tape">1. Record the metadata for each tape</h3>
+<p>Possibly the most important thing in this entire portion of the project is staying organized. <strong>We need to account for every single day and sampling period.</strong> Record everything that you are doing, or need to remember in order to account for every tape (both sides).</p>
+<p><img src="images/digitization/metadata.JPG" class="img-fluid"></p>
+<p><img src="images/digitization/rewind_tape.JPG" class="img-fluid"></p>
+<p>Each tape has the date, year, and site written on the tape and case. Keep these two together at all times when the tape is not in the cassette player.</p>
+<p>For each tape write down the following information in a notebook:</p>
+<ul>
+<li><p>Cassette <em>year_month_day</em></p></li>
+<li><p>Digitized? (leave this blank for now)</p>
+<ul>
+<li>This will be important, since some of our cassette tapes might already have trouble being restored.</li>
+</ul></li>
+<li><p>Notes (if necessary for the cassette)</p></li>
+</ul>
+</section>
+<section id="insert-the-cassette-tape" class="level3">
+<h3 class="anchored" data-anchor-id="insert-the-cassette-tape">2. Insert the cassette tape</h3>
+<p>Insert the tape (thin side down) into the cassette player and make sure the tape is between the two brackets.</p>
+<p><img src="images/digitization/insert_tape2.JPG" class="img-fluid"></p>
+</section>
+<section id="rewind-or-fast-forward-the-tape-to-the-beginning" class="level3">
+<h3 class="anchored" data-anchor-id="rewind-or-fast-forward-the-tape-to-the-beginning">3. Rewind or fast forward the tape to the beginning</h3>
+<p>Before playing the tape, make sure that the tape is at the beginning. Fast forward or rewind the tape depending on what side of the tape is inserted into the player.</p>
+<p><img src="images/digitization/fwd.JPG" class="img-fluid"></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/digitization/rewind_tape.JPG" class="img-fluid figure-img"></p>
+<figcaption>This tape is ready to be played now that its been rewound to the beginning.</figcaption>
+</figure>
+</div>
+</section>
+<section id="press-play-and-record" class="level3">
+<h3 class="anchored" data-anchor-id="press-play-and-record">4. Press play and record</h3>
+<p>Press play. Wait until you here a voice that will state the day and time. You can adjust the volume on top of the player, or use headphones. The headphone jack is next to the on/off button.</p>
+<p><img src="images/digitization/record.jpg" class="img-fluid"></p>
+<p>Once you hear the voice, immediately hold in the record button until you see “rec” in the right side of the player screen.</p>
+<p><img src="images/digitization/record1.jpg" class="img-fluid"></p>
+<p>The tape will play for ~ 40 minutes. Maybe ~20 minutes of that will be actual PAM data and the rest will be left over tape. Once the end is reached, flip the tape around and repeat the process.</p>
+</section>
+<section id="verify-and-rename-the-recording" class="level3">
+<h3 class="anchored" data-anchor-id="verify-and-rename-the-recording">5. Verify and rename the recording</h3>
+<p>5a. Attach the microsd card to the thumbdrive and connect it to a computer with RavenPro. <img src="images/clipboard-3589518255.jpeg" class="img-fluid" width="50"></p>
+<p>This tutorial already assumes that the user knows the basics of RavenPro. If not, please see the <strong>Introduction to RavenPro</strong> section of these docs.</p>
+<p>Open the recoding in RavenPro, which will be automatically saved in the microsd card as “TAPE##”.</p>
+<p><img src="images/digitization/rename00.jpg" class="img-fluid"></p>
+<p><img src="images/digitization/open_ravenpro.jpg" class="img-fluid"></p>
+<p>Each recording with be one side of the tape. Since the cassette tapes hold multiple days of data, the recording will have multiple indicators (the voice of the Orthopteran god that tells us the day and time in the recording). Each broadband signal spanning 0-10 kHz is likely the date indicator.</p>
+<p><img src="images/digitization/indicator.jpg" class="img-fluid"></p>
+<p>Zoom in and listen to the first and last indicator to make sure all the dates listed on tapes are accounted for. These date stamps should occur every minute in the recording.</p>
+<p><img src="images/digitization/indicator_zoom.jpg" class="img-fluid"></p>
+<p>Once the recording has been verified, name the corresponding file to the <em>site_date#1_date#2</em> listed in the file. The name format should resemble these. Standard formatting and dates/sites that are accurate to what is being listed in the recording are absolutely crucial to this project! Any discrepancies will result in likely multiple cassettes having to be re-digitized, which will involve digging through boxes filled with cassette tapes.</p>
+<p><img src="images/clipboard-310219674.jpeg" class="img-fluid"></p>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
@@ -285,7 +346,7 @@ ul.task-list li input[type="checkbox"] {
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp('/' + window.location.host + '/');
+        var filterRegex = new RegExp("https:\/\/joe-elias\.github\.io\/orthodocs\/");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
