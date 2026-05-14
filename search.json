@@ -4,7 +4,7 @@
     "href": "Introduction to RavenPro.html",
     "title": "Introduction to RavenPro",
     "section": "",
-    "text": "Raven Pro is a software program for the acquisition, visualization, measurement, and analysis of sounds developed by the K. Lisa Yang Center for Conservation Bioacoustics at the Cornell Lab of Ornithology. Open RavenPro, which will have an a desktop icon like this: \nRavenPro should open to a blank workbench (Figure 1).\n\n\n\nFigure 1. Opening screen on the RavenPro software.\n\n\nThere are many components and configurations for the RavenPro software. Included in these docs are the main components that we’ll use. For a more detailed tutorial of RavenPro, please see its user manual.",
+    "text": "Raven Pro is a software program for the acquisition, visualization, measurement, and analysis of sounds developed by the K. Lisa Yang Center for Conservation Bioacoustics at the Cornell Lab of Ornithology. Open RavenPro, which will have an a desktop icon like this: \nRavenPro should open to a blank workbench (Figure 1).\n\n\n\nFigure 1. Opening screen on the RavenPro software.\n\n\nThere are many components and configurations for the RavenPro software. Included in these docs are the main components that we’ll use. For a more detailed tutorial of RavenPro, please see its user manual.\n\n\n\nFigure 2. The main components of RavenPro.",
     "crumbs": [
       "Introduction to RavenPro"
     ]
@@ -14,7 +14,27 @@
     "href": "Introduction to RavenPro.html#getting-started-in-ravenpro",
     "title": "Introduction to RavenPro",
     "section": "",
-    "text": "Raven Pro is a software program for the acquisition, visualization, measurement, and analysis of sounds developed by the K. Lisa Yang Center for Conservation Bioacoustics at the Cornell Lab of Ornithology. Open RavenPro, which will have an a desktop icon like this: \nRavenPro should open to a blank workbench (Figure 1).\n\n\n\nFigure 1. Opening screen on the RavenPro software.\n\n\nThere are many components and configurations for the RavenPro software. Included in these docs are the main components that we’ll use. For a more detailed tutorial of RavenPro, please see its user manual.",
+    "text": "Raven Pro is a software program for the acquisition, visualization, measurement, and analysis of sounds developed by the K. Lisa Yang Center for Conservation Bioacoustics at the Cornell Lab of Ornithology. Open RavenPro, which will have an a desktop icon like this: \nRavenPro should open to a blank workbench (Figure 1).\n\n\n\nFigure 1. Opening screen on the RavenPro software.\n\n\nThere are many components and configurations for the RavenPro software. Included in these docs are the main components that we’ll use. For a more detailed tutorial of RavenPro, please see its user manual.\n\n\n\nFigure 2. The main components of RavenPro.",
+    "crumbs": [
+      "Introduction to RavenPro"
+    ]
+  },
+  {
+    "objectID": "Introduction to RavenPro.html#importing-sound-files",
+    "href": "Introduction to RavenPro.html#importing-sound-files",
+    "title": "Introduction to RavenPro",
+    "section": "Importing sound files",
+    "text": "Importing sound files\nAnnotators will receive learning sets of recordings inside a hard drive titled Cricket Recordings/Annotations_S26. Each annotator will have a directory with their name. Inside their named directory will be a list of recordings specifically assigned to them. For now navigate to the directory learning_recordings with labeled directories t1-t4.\nTo open a recording, click file &gt; open sound recordings and navigate to the directory with your training recordings—they’ll be .wav format (Figure 3).\n\n\n\nFigure 3. Open sound files in RavenPro.\n\n\nDo not alter any default settings. Click continue. The original file will show doubles of the recording, and the waveform and spectrogram. Uncheck channel 2 on the side panel. Note: sometimes channel 2 has a much stronger signal than channel 1. If this is the case use channel 2.",
+    "crumbs": [
+      "Introduction to RavenPro"
+    ]
+  },
+  {
+    "objectID": "Introduction to RavenPro.html#spectrogram-and-waveform",
+    "href": "Introduction to RavenPro.html#spectrogram-and-waveform",
+    "title": "Introduction to RavenPro",
+    "section": "Spectrogram and waveform",
+    "text": "Spectrogram and waveform\nThe spectrogram is the primary panel that we’ll view when a sound file is played. The spectrogram represents the frequency of the calls (y-axis) across time (x-axis). The color of the call in the spectrogram represents the power (energy) emitted in the recording at each point in time. The color can be changed—black/white/gray tones might be the easiest to work with.\nThe waveform displays an oscillogram showing amplitude (y-axis) across time (x-axis). This will be extremely useful for similar sounding Orthopterans. We can use the oscillogram to view chirp and pulse rate—the time between chirps (ch/s) and between pulses in a single chirp (ps/ch) which might be important for IDs. More on this later!\n\n\n\nFigure 4. Display of the spectrogram and waveform that appears after loading a sound file into RavenPro. After unchecking channel 2, RavenPro typically looks like the image on the right.",
     "crumbs": [
       "Introduction to RavenPro"
     ]
@@ -64,7 +84,7 @@
     "href": "Analog Digitization.html#issues-with-cassette-tapes",
     "title": "Analog Digitization",
     "section": "Issues with cassette tapes",
-    "text": "Issues with cassette tapes\nSome of these cassette tapes will have issues. Most commonly the cassette tapes might play very slowly, or might not play at all. If this occurs you could try fast forwarding or rewinding a couple seconds to unstick the tape or manually turning tapes a little bit if nothing seems to be moving. Some might appear to record well and then throw an error message when opened in RavenPro. In this case redigitize that side of the cassette and try again.\n\nIf there are still issues (1) make sure this tape does not stay in the datasheet and especially make sure that this tape does not get marked as “yes” under “digitized? (y/n)”; (2) insert a piece of paper in the cassette tape case that says “issue” - and briefly describe the issue.\n\n\n8. Transfer cassette tapes for long-term storage\nAll cassette tapes that are successfully digitized will be placed in their own seperate box that will be organized by site #. The same will be done for cassettes that had issues. We will digitize all the cassettes for a single site before moving on to the next site.",
+    "text": "Issues with cassette tapes\nSome of these cassette tapes will have issues. Most commonly the cassette tapes might play very slowly, or might not play at all. If this occurs you could try fast forwarding or rewinding a couple seconds to unstick the tape or manually turning tapes a little bit if nothing seems to be moving. Some might appear to record well and then throw an error message when opened in RavenPro. In this case redigitize that side of the cassette and try again. Or, the thumbdrive might need to be fixed.\n\nIf there are still issues (1) make sure this tape does not stay in the datasheet and especially make sure that this tape does not get marked as “yes” under “digitized? (y/n)”; (2) insert a piece of paper in the cassette tape case that says “issue” - and briefly describe the issue.\n\n\n8. Transfer cassette tapes for long-term storage\nAll cassette tapes that are successfully digitized will be placed in their own separate box that will be organized by site #. The same will be done for cassettes that had issues. We will digitize all the cassettes for a single site before moving on to the next site.",
     "crumbs": [
       "Analog Digitization"
     ]

@@ -144,6 +144,8 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#getting-started-in-ravenpro" id="toc-getting-started-in-ravenpro" class="nav-link active" data-scroll-target="#getting-started-in-ravenpro">Getting started in RavenPro</a></li>
+  <li><a href="#importing-sound-files" id="toc-importing-sound-files" class="nav-link" data-scroll-target="#importing-sound-files">Importing sound files</a></li>
+  <li><a href="#spectrogram-and-waveform" id="toc-spectrogram-and-waveform" class="nav-link" data-scroll-target="#spectrogram-and-waveform">Spectrogram and waveform</a></li>
   </ul>
 </nav>
     </div>
@@ -180,6 +182,35 @@ ul.task-list li input[type="checkbox"] {
 </figure>
 </div>
 <p>There are many components and configurations for the RavenPro software. Included in these docs are the main components that we’ll use. For a more detailed tutorial of RavenPro, please see its <a href="https://ravensoundsoftware.com/wp-content/uploads/2017/11/Raven14UsersManual.pdf">user manual</a>.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/RavenPro_Intro/components.jpg" class="img-fluid figure-img"></p>
+<figcaption>Figure 2. The main components of RavenPro.</figcaption>
+</figure>
+</div>
+</section>
+<section id="importing-sound-files" class="level2">
+<h2 class="anchored" data-anchor-id="importing-sound-files">Importing sound files</h2>
+<p>Annotators will receive learning sets of recordings inside a hard drive titled <em>Cricket Recordings/Annotations_S26</em>. Each annotator will have a directory with their name. Inside their named directory will be a list of recordings specifically assigned to them. For now navigate to the directory <em>learning_recordings</em> with labeled directories <em>t1-t4.</em></p>
+<p>To open a recording, click <code>file</code> &gt; <code>open sound recordings</code> and navigate to the directory with your training recordings—they’ll be <em>.wav</em> format (Figure 3).</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/RavenPro_Intro/open_sound.jpg" class="img-fluid figure-img"></p>
+<figcaption>Figure 3. Open sound files in RavenPro.</figcaption>
+</figure>
+</div>
+<p>Do not alter any default settings. Click <code>continue</code>. The original file will show doubles of the recording, and the waveform and spectrogram. Uncheck channel 2 on the side panel. Note: sometimes channel 2 has a much stronger signal than channel 1. If this is the case use channel 2.</p>
+</section>
+<section id="spectrogram-and-waveform" class="level2">
+<h2 class="anchored" data-anchor-id="spectrogram-and-waveform">Spectrogram and waveform</h2>
+<p>The <strong>spectrogram</strong> is the primary panel that we’ll view when a sound file is played. The spectrogram represents the frequency of the calls (y-axis) across time (x-axis). The color of the call in the spectrogram represents the power (energy) emitted in the recording at each point in time. The color can be changed—black/white/gray tones might be the easiest to work with.</p>
+<p>The <strong>waveform</strong> displays an oscillogram showing amplitude (y-axis) across time (x-axis). This will be extremely useful for similar sounding Orthopterans. We can use the oscillogram to view chirp and pulse rate—the time between chirps (ch/s) and between pulses in a single chirp (ps/ch) which might be important for IDs. More on this later!</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/RavenPro_Intro/spectrogram_waveform.jpg" class="img-fluid figure-img"></p>
+<figcaption>Figure 4. Display of the spectrogram and waveform that appears after loading a sound file into RavenPro. After unchecking channel 2, RavenPro typically looks like the image on the right.</figcaption>
+</figure>
+</div>
 
 
 </section>
