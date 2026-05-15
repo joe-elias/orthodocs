@@ -34,7 +34,37 @@
     "href": "Introduction to RavenPro.html#spectrogram-and-waveform",
     "title": "Introduction to RavenPro",
     "section": "Spectrogram and waveform",
-    "text": "Spectrogram and waveform\nThe spectrogram is the primary panel that we’ll view when a sound file is played. The spectrogram represents the frequency of the calls (y-axis) across time (x-axis). The color of the call in the spectrogram represents the power (energy) emitted in the recording at each point in time. The color can be changed—black/white/gray tones might be the easiest to work with.\nThe waveform displays an oscillogram showing amplitude (y-axis) across time (x-axis). This will be extremely useful for similar sounding Orthopterans. We can use the oscillogram to view chirp and pulse rate—the time between chirps (ch/s) and between pulses in a single chirp (ps/ch) which might be important for IDs. More on this later!\n\n\n\nFigure 4. Display of the spectrogram and waveform that appears after loading a sound file into RavenPro. After unchecking channel 2, RavenPro typically looks like the image on the right.",
+    "text": "Spectrogram and waveform\nThe spectrogram is the primary panel that we’ll view when a sound file is played. The spectrogram represents the frequency of the calls (y-axis) across time (x-axis). The color of the call in the spectrogram represents the power (energy) emitted in the recording at each point in time. The color can be changed—black/white/gray tones might be the easiest to work with.\nThe waveform displays an oscillogram showing amplitude (y-axis) across time (x-axis). This will be extremely useful for similar sounding Orthopterans. We can use the oscillogram to view chirp and pulse rate—the time between chirps (ch/s) and between pulses in a single chirp (ps/ch) which might be important for IDs. More on this later!\n\n\n\nFigure 4. Display of the spectrogram and waveform with the channel 2 and waveform unchecked. For easy viewing during the first pass of the recording it’s okay to uncheck the waveform and keep it unchecked until you need it.",
+    "crumbs": [
+      "Introduction to RavenPro"
+    ]
+  },
+  {
+    "objectID": "Introduction to RavenPro.html#color-and-zoom-settings",
+    "href": "Introduction to RavenPro.html#color-and-zoom-settings",
+    "title": "Introduction to RavenPro",
+    "section": "Color and zoom settings",
+    "text": "Color and zoom settings\nThere are different colors available to view the spectrogram. The grayscale or jet (default) option might be the easiest/most consistent color to use.\n\n\n\nFigure 5. Drop down menu for color options.\n\n\nZoom the spectrogram window as needed. This isn’t mandatory but is reccomended since some species might need to be boxed in sections if their calling is inconsistent; the same species’ signal spaced more than 3 seconds apart from each other.\n\n\n\n\nFigure 6. Two modes of zooming the spectrogram and/or waveform. (1) click in the window (spectrogram or waveform); (2) use the zoom button in the top panel or bottom right corner of the RavenPro window. The |--| button in the bottom right window will reset the zoom to its default.",
+    "crumbs": [
+      "Introduction to RavenPro"
+    ]
+  },
+  {
+    "objectID": "Introduction to RavenPro.html#selection-table",
+    "href": "Introduction to RavenPro.html#selection-table",
+    "title": "Introduction to RavenPro",
+    "section": "Selection table",
+    "text": "Selection table\nEditing the selection table is critical for annotating acoustic signals for this project. (1) right click the empty space next to the table columns and choose add annotation column; (2) name one column Annotation and another Notes. Keep both case sensitive. Annotation will recieve your primary ID. Notes will receive the alternative ID (if applicable).\nClick on the right of the selection table and choose Measurements. Add 95% Frequency to the table. The low and high frequency which corresponds to the species ID will vary depending on the person annotating. The 95% Frequency column will account for individual differences between annotators.\n\n\n\nFigure 7. Editing the selection table for Orthoptera annotations.\n\n\nIf you need to delete a selection, right click the selection in the table and choose Clear Active Selections.",
+    "crumbs": [
+      "Introduction to RavenPro"
+    ]
+  },
+  {
+    "objectID": "Introduction to RavenPro.html#play-sound-in-ravenpro",
+    "href": "Introduction to RavenPro.html#play-sound-in-ravenpro",
+    "title": "Introduction to RavenPro",
+    "section": "Play sound in RavenPro",
+    "text": "Play sound in RavenPro\nThe controls for playing sound are located on the top toolbars (Figure 2). Play will start playing the recording continuously until paused. Play Visible will play the entire frequency range within the time series window. As the sound plays, a line moves across the spectrogram and waveform. For more information see the RavenPro manual, but we will mostly use Play Visible and Filtered Play. Once a signal is boxed, we can use Filtered Play to omit any sound that occurs outside of our selected box and then when we select Play Visible, it will only play the boxed signal. This workflow is essentially the primary tools you will need to listen and isolate sound to make an accurate ID. We will revisit this on the Tutorial page.\n\n\n\nFigure 8. Playback tool bar which is located at the top of the RavenPro window (Charif, Waak, and Strickman 2010). The volume setting is positioned next to the play settings.\n\n\nRecordings can be quieter than the sample recordings online, that are used to ID. Its recommended to turn up the volume within RavenPro and keep the volume at a reasonable level on the computer so that you don’t blow your eardrums every time you switch between software!\n\n\n\nFigure 9. Increase or decrease sound levels only within the RavenPro software.",
     "crumbs": [
       "Introduction to RavenPro"
     ]
