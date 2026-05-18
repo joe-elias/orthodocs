@@ -70,6 +70,16 @@
     ]
   },
   {
+    "objectID": "Introduction to RavenPro.html#annotate-acoustic-signals",
+    "href": "Introduction to RavenPro.html#annotate-acoustic-signals",
+    "title": "Introduction to RavenPro",
+    "section": "Annotate acoustic signals",
+    "text": "Annotate acoustic signals\nUse the selection tool to draw a box around an acoustic signal. The box should be drawn using the selection tool + located on the top toolbar.\n\n\n\nFigure 10. Selection tool used to draw a box around an acoustic signal. Bonus: the pointer finger icon allows the user to select a boxed signal to edit its extent and position. The same thing can be accomplished by clicking the selection in the selection table.\n\n\n\n\n\nFigure 11. An example of a boxed acoustic signal. Notice how tight I boxed the signal. Leave out the reverberations—the portion of the signal that fades as the energy dissipates. We’re interested in the primary signal that’s emitted by the Orthopteran stridulation.\n\n\nOnce a box is drawn around a signal, press enter. A popup box will appear—either press enter again and create an empty selection in the selection table, or directly enter the ID and alternative ID, if necessary, and then press enter to add to the selection table.\n\n\n\nFigure 12. Selection pop-up that needs to be saved (press enter) to the selection table. Otherwise, once another selection is made, the previous one will disappear. To change this workflow, uncheck the option that says “Show this dialog whenever a selection is committed.\n\n\nWhen entering an ID, put the primary ID in the Annotation column and the secondary ID—if there is one—in the Notes column. IDs should be formatted as Genus_species—case sensitive. If there are more than one alternative ID, format the entry Genus_species_or_Genus_species.\n\n\n\nFigure 13. Proper formatting for an ID. This specific signal has no other species within the frequency range that sounds similar, so the Notes column is left empty.\n\n\nAt the lower frequencies the alternative ID might sometimes be frog. Some toad and Oecanthus species sound similar. If you’re unsure of the specific species it’s okay to only enter the genus. For instance, Oecanthus is almost always just entered as Oecanthus. The species in this genus have very similar stridulation patterns in the same frequency range. For more on this, continue to the Tutorial page.",
+    "crumbs": [
+      "Introduction to RavenPro"
+    ]
+  },
+  {
     "objectID": "Analog Digitization.html",
     "href": "Analog Digitization.html",
     "title": "Analog Digitization",
