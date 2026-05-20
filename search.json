@@ -4,35 +4,50 @@
     "href": "Tutorial.html",
     "title": "Tutorial",
     "section": "",
-    "text": "This tutorial assumes that the user has general knowledge of RavenPro. Please see the Introduction to RavenPro page for more information. To start:\n\nImport a sound file.\nCreate an Annotation and Notes column in a selection table.\n\nThe tutorial will run through the first learning file, found in the first set of training files. Open the file from our training folder and reference the supplied help—ID Key page and the Orthoptera Call Guide—while going through the tutorial."
+    "text": "This tutorial assumes that the user has general knowledge of RavenPro. Please see the Introduction to RavenPro page for more information. To start:\n\nImport a sound file.\nCreate an Annotation and Notes column in a selection table.\n\nThe tutorial will run through the first learning file, found in the first set of training files. Open the file from our training folder and reference the supplied help—ID Key page and the Orthoptera Call Guide—while going through the tutorial.",
+    "crumbs": [
+      "Tutorial"
+    ]
   },
   {
     "objectID": "Tutorial.html#tutorial-for-annotating-orthopteran-stridulations",
     "href": "Tutorial.html#tutorial-for-annotating-orthopteran-stridulations",
     "title": "Tutorial",
     "section": "",
-    "text": "This tutorial assumes that the user has general knowledge of RavenPro. Please see the Introduction to RavenPro page for more information. To start:\n\nImport a sound file.\nCreate an Annotation and Notes column in a selection table.\n\nThe tutorial will run through the first learning file, found in the first set of training files. Open the file from our training folder and reference the supplied help—ID Key page and the Orthoptera Call Guide—while going through the tutorial."
+    "text": "This tutorial assumes that the user has general knowledge of RavenPro. Please see the Introduction to RavenPro page for more information. To start:\n\nImport a sound file.\nCreate an Annotation and Notes column in a selection table.\n\nThe tutorial will run through the first learning file, found in the first set of training files. Open the file from our training folder and reference the supplied help—ID Key page and the Orthoptera Call Guide—while going through the tutorial.",
+    "crumbs": [
+      "Tutorial"
+    ]
   },
   {
     "objectID": "Tutorial.html#box-a-call",
     "href": "Tutorial.html#box-a-call",
     "title": "Tutorial",
     "section": "1. Box a call",
-    "text": "1. Box a call\nUse the selection tool to draw a box around a suspected Orthopteran—leaving out the reverberations and including only the strongest parts of the signal.\n\n\n\nFigure 1. Select the Orthopteran signal at ~ 5kHz and press enter.\n\n\nLet’s figure out how to ID this call. Open the Orthoptera Call Guide which is the first step one should take to ID a signal. This reference guide has all the possible species in Eastern Texas."
+    "text": "1. Box a call\nUse the selection tool to draw a box around a suspected Orthopteran—leaving out the reverberations and including only the strongest parts of the signal.\n\n\n\nFigure 1. Select the Orthopteran signal at ~ 5kHz and press enter.\n\n\nLet’s figure out how to ID this call. Open the Orthoptera Call Guide which is the first step one should take to ID a signal. This reference guide has all the possible species in Eastern Texas.",
+    "crumbs": [
+      "Tutorial"
+    ]
   },
   {
     "objectID": "Tutorial.html#describe-the-sound",
     "href": "Tutorial.html#describe-the-sound",
     "title": "Tutorial",
     "section": "2. Describe the sound",
-    "text": "2. Describe the sound\nPlay your selection using the Filtered Play function. Describe the sound. Is it a chirp (or chorus of chirps)— individual buzzy or chime-like notes, or it a trill—a single and consistent note. It’s best to decide this by sound and by visually inspecting the signal morphology. Sometimes chirping species chorus—many chirps happening at once—resulting in the signal morphology resembling a trill. Our selection appears to be a chorusing species—when zoomed, we can distinctly see many strong signals accumulating between ~5 and ~6 kHz.\n\n\n\nFigure 2. Our selection seems to be many individual chirps. This is many individuals of the same species chorusing at once."
+    "text": "2. Describe the sound\nPlay your selection using the Filtered Play function. Describe the sound. Is it a chirp (or chorus of chirps)— individual buzzy or chime-like notes, or it a trill—a single and consistent note. It’s best to decide this by sound and by visually inspecting the signal morphology. Sometimes chirping species chorus—many chirps happening at once—resulting in the signal morphology resembling a trill. Our selection appears to be a chorusing species—when zoomed, we can distinctly see many strong signals accumulating between ~5 and ~6 kHz.\n\n\n\nFigure 2. Our selection seems to be many individual chirps. This is many individuals of the same species chorusing at once.",
+    "crumbs": [
+      "Tutorial"
+    ]
   },
   {
     "objectID": "Tutorial.html#describe-the-frequency-range",
     "href": "Tutorial.html#describe-the-frequency-range",
     "title": "Tutorial",
     "section": "2. Describe the frequency range",
-    "text": "2. Describe the frequency range\nThe sound might be described as many (chorus) buzzy chirps that last ~0.5-1 second each. Now let’s consider the frequency. If we look at the Orthoptera Call Guide we see a couple columns that might help ID the species like Frequency and Call Pattern.\nLook at the Frequency Column. Open the links for any species that fall close to the frequency range (min or max freq, or middle and 95%) in our selection. This is why it’s important to box signals accurately—including too much noise in the selection will make it very difficult to narrow down an ID. The link attached to each species will take you to an example of their stridulation from the Singing Insects of North America (SINA) database.\n3\nand look/sound similar to the energy signal on the spectrogram."
+    "text": "2. Describe the frequency range\nThe sound might be described as many (chorus) buzzy chirps that last ~0.5-1 second each. Now let’s consider the frequency. If we look at the Orthoptera Call Guide we see a couple columns that might help ID the species like Frequency and Call Pattern.\nLook at the Frequency Column. Open the links for any species that fall close to the frequency range (min or max freq, or middle and 95%) in our selection. This is why it’s important to box signals accurately—including too much noise in the selection will make it very difficult to narrow down an ID. The link attached to each species will take you to an example of their stridulation from the Singing Insects of North America (SINA) database.\n3\nand look/sound similar to the energy signal on the spectrogram.",
+    "crumbs": [
+      "Tutorial"
+    ]
   },
   {
     "objectID": "index.html",
