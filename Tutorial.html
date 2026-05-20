@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>About – Orthoptera Bioacoustics Docs</title>
+<title>Tutorial – Orthoptera Bioacoustics Docs</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -84,7 +84,9 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./about.html">About</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">
+      Orthoptera Bioacoustics Docs
+      </li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -117,7 +119,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./about.html" class="sidebar-item-text sidebar-link active">
+  <a href="./about.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">About</span></a>
   </div>
 </li>
@@ -143,8 +145,10 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#how-to-use-these-docs" id="toc-how-to-use-these-docs" class="nav-link active" data-scroll-target="#how-to-use-these-docs">How to use these docs</a></li>
-  <li><a href="#project-background" id="toc-project-background" class="nav-link" data-scroll-target="#project-background">Project Background</a></li>
+  <li><a href="#tutorial-for-annotating-orthopteran-stridulations" id="toc-tutorial-for-annotating-orthopteran-stridulations" class="nav-link active" data-scroll-target="#tutorial-for-annotating-orthopteran-stridulations">Tutorial for annotating Orthopteran stridulations</a></li>
+  <li><a href="#box-a-call" id="toc-box-a-call" class="nav-link" data-scroll-target="#box-a-call">1. Box a call</a></li>
+  <li><a href="#describe-the-sound" id="toc-describe-the-sound" class="nav-link" data-scroll-target="#describe-the-sound">2. Describe the sound</a></li>
+  <li><a href="#describe-the-frequency-range" id="toc-describe-the-frequency-range" class="nav-link" data-scroll-target="#describe-the-frequency-range">2. Describe the frequency range</a></li>
   </ul>
 </nav>
     </div>
@@ -153,7 +157,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">About</h1>
+<h1 class="title">Tutorial</h1>
 </div>
 
 
@@ -170,23 +174,45 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="how-to-use-these-docs" class="level2">
-<h2 class="anchored" data-anchor-id="how-to-use-these-docs">How to use these docs</h2>
-<p>If it’s your first time annotating and identifying Orthoptera, start with this brief background of the project and then the <strong>Introduction to RavenPro</strong> page. This website is a collection of resources to help new and existing annotators learn Orthoptera ID, use RavenPro, and annotate acoustic signals well enough to train a convolutional neural network (CNN) for automated ID.</p>
+<section id="tutorial-for-annotating-orthopteran-stridulations" class="level2">
+<h2 class="anchored" data-anchor-id="tutorial-for-annotating-orthopteran-stridulations">Tutorial for annotating Orthopteran stridulations</h2>
+<p>This tutorial assumes that the user has general knowledge of RavenPro. Please see the <strong>Introduction to RavenPro</strong> page for more information. To start:</p>
+<ol type="1">
+<li>Import a sound file.</li>
+<li>Create an <strong>Annotation</strong> and <strong>Notes</strong> column in a selection table.</li>
+</ol>
+<p>The tutorial will run through <em>the</em> <a href="https://drive.google.com/file/d/1wS8jbPxy9n4_jL7N-6o8GTGuOn_l0mT6/view">first learning file</a>, found in the first set of training files. Open the file from our training folder and reference the supplied help—<strong>ID Key</strong> page and the <a href="https://docs.google.com/spreadsheets/d/1klMWGWtpvWHylVUaaB9nnBOiFvXm6wb4ZrrdUU_eoO0/edit?usp=sharing">Orthoptera Call Guide</a>—while going through the tutorial.</p>
 </section>
-<section id="project-background" class="level2">
-<h2 class="anchored" data-anchor-id="project-background">Project Background</h2>
-<p>Orthoptera (crickets, katydids, grasshoppers, locusts) are declining more rapidly than other insect taxa and are an important part of soundscapes, the collective noises in an ecosystem that can indicate its health. Orthoptera provide numerous ecosystem functions and services including nutrient cycling, trophic support as food sources, entomophagy, and seed dispersal. Because they are sensitive to environmental change, they are declining more rapidly than other insect groups, with estimates reaching 2.1-2.7% per year (Welti et al.&nbsp;2020). This sensitivity also makes them good bioindicators (Riede 1998, McNeil and Grozinger 2020) to be used as a tool for broader conservation management (Menz et al.&nbsp;2013). Despite their importance to ecosystem function, there is limited consistent and long-term monitoring data for Orthoptera, especially for nocturnal species (e.g.&nbsp;katydids and crickets).</p>
-<p><img src="images/info_services.png" class="img-fluid"></p>
-<p>We will leverage a 25-year time series dataset of soundscape recordings – originally meant to collect amphibian calls—collected by USDA biologists in eastern Texas to measure the trends in Orthopteran communities over the last two decades to build stronger conclusions about community change and suspected decline alongside other environmental drivers (e.g., climate and land use change).</p>
-<p><br>
-<img src="images/map.jpg" class="img-fluid"></p>
-<p>As annotators, our objective is to apply a pre-trained convolutional neural network (CNN)—a form of AI—to automatically ID Orthopteran stridulation patterns in digital and analog recordings. The stridulation patterns look similar to the image below, where each band of energy has a morphological pattern and occurs at a given frequency between 0 and ~8 kHz.</p>
-<p><img src="images/spectrogram_example_1.jpg" class="img-fluid"></p>
-<p>The total dataset is ~ 7,200 hours, but our goal is to taxonomically identify a subset of the data (a few hundred hours) to teach the CNN model to identify the rest of the 7,200 hours of recordings. We will listen to and annotate a subset of recordings from a 25-year dataset using the <a href="https://www.ravensoundsoftware.com/software/raven-pro/">RavenPro</a> sound analysis tool. The training data will feed into a pre-trained CNN network,&nbsp;<a href="https://zenodo.org/records/8415090">BirdNet</a>, originally developed for bird identification—both tools were developed by the <a href="https://www.birds.cornell.edu/ccb/">K. Lisa Yang Center for Conservation Bioacoustics</a>.</p>
-<p>Oh, and recordings from 2000-2008 are in analog cassette format so we will be digitizing those as well! When completed this will be the largest consistent PAM dataset for Orthoptera in the world, and will inform conservation management endeavors for this taxa.</p>
-<p><img src="images/cassettes.jpg" class="img-fluid"></p>
-<p><img src="images/cricket.jpg" class="img-fluid" width="847"></p>
+<section id="box-a-call" class="level2">
+<h2 class="anchored" data-anchor-id="box-a-call">1. Box a call</h2>
+<p>Use the selection tool to draw a box around a suspected Orthopteran—leaving out the reverberations and including only the strongest parts of the signal.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/tutorial/selection.jpg" class="img-fluid figure-img"></p>
+<figcaption>Figure 1. Select the Orthopteran signal at ~ 5kHz and press enter.</figcaption>
+</figure>
+</div>
+<p>Let’s figure out how to ID this call. Open the <a href="https://docs.google.com/spreadsheets/d/1klMWGWtpvWHylVUaaB9nnBOiFvXm6wb4ZrrdUU_eoO0/edit?usp=sharing">Orthoptera Call Guide</a> which is the first step one should take to ID a signal. This reference guide has all the possible species in Eastern Texas.</p>
+</section>
+<section id="describe-the-sound" class="level2">
+<h2 class="anchored" data-anchor-id="describe-the-sound">2. Describe the sound</h2>
+<p>Play your selection using the <code>Filtered Play</code> function. Describe the sound. Is it a chirp (or chorus of chirps)— individual buzzy or chime-like notes, or it a trill—a single and consistent note. It’s best to decide this by sound and by visually inspecting the signal morphology. Sometimes chirping species chorus—many chirps happening at once—resulting in the signal morphology resembling a trill. Our selection appears to be a chorusing species—when zoomed, we can distinctly see many strong signals accumulating between ~5 and ~6 kHz.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/tutorial/chirp_chorus.jpg" class="img-fluid figure-img"></p>
+<figcaption>Figure 2. Our selection seems to be many individual chirps. This is many individuals of the same species chorusing at once.</figcaption>
+</figure>
+</div>
+</section>
+<section id="describe-the-frequency-range" class="level2">
+<h2 class="anchored" data-anchor-id="describe-the-frequency-range">2. Describe the frequency range</h2>
+<p>The sound might be described as many (chorus) buzzy chirps that last ~0.5-1 second each. Now let’s consider the frequency. If we look at the <a href="https://docs.google.com/spreadsheets/d/1klMWGWtpvWHylVUaaB9nnBOiFvXm6wb4ZrrdUU_eoO0/edit?usp=sharing">Orthoptera Call Guide</a> we see a couple columns that might help ID the species like <strong><em>Frequency</em></strong> and <strong><em>Call Pattern</em></strong>.</p>
+<p>Look at the <strong><em>Frequency Column</em></strong>. Open the links for any species that fall close to the frequency range (min or max freq, or middle and 95%) in our selection. This is why it’s important to box signals accurately—including too much noise in the selection will make it very difficult to narrow down an ID. The link attached to each species will take you to an example of their stridulation from the Singing Insects of North America (SINA) database.</p>
+<p>3</p>
+<p>and look/sound similar to the energy signal on the spectrogram.&nbsp;</p>
+<ol type="a">
+<li></li>
+</ol>
 
 
 </section>
