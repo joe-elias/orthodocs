@@ -139,6 +139,9 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">Tutorial</span></a>
   </div>
 </li>
+        <li class="sidebar-item">
+ <span class="menu-text">Resources.qmd</span>
+  </li>
     </ul>
     </div>
 </nav>
@@ -156,6 +159,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#selection-table" id="toc-selection-table" class="nav-link" data-scroll-target="#selection-table">Selection table</a></li>
   <li><a href="#play-sound-in-ravenpro" id="toc-play-sound-in-ravenpro" class="nav-link" data-scroll-target="#play-sound-in-ravenpro">Play sound in RavenPro</a></li>
   <li><a href="#annotate-acoustic-signals" id="toc-annotate-acoustic-signals" class="nav-link" data-scroll-target="#annotate-acoustic-signals">Annotate acoustic signals</a></li>
+  <li><a href="#saving-a-selection-table" id="toc-saving-a-selection-table" class="nav-link" data-scroll-target="#saving-a-selection-table">Saving a selection table</a></li>
   </ul>
 </nav>
     </div>
@@ -181,8 +185,8 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="getting-started-in-ravenpro" class="level2">
-<h2 class="anchored" data-anchor-id="getting-started-in-ravenpro">Getting started in RavenPro</h2>
+<section id="getting-started-in-ravenpro" class="level1">
+<h1>Getting started in RavenPro</h1>
 <p>Raven Pro is a software program for the acquisition, visualization, measurement, and analysis of sounds developed by the <a href="https://www.birds.cornell.edu/ccb/raven-pro/">K. Lisa Yang Center for Conservation Bioacoustics</a> at the Cornell Lab of Ornithology. Open RavenPro, which will have an a desktop icon like this: <img src="images/RavenPro_Intro/ravenpro_logo.jpg" class="img-fluid" width="60"></p>
 <p>RavenPro should open to a blank workbench (Figure 1).</p>
 <div class="quarto-figure quarto-figure-center">
@@ -199,8 +203,8 @@ ul.task-list li input[type="checkbox"] {
 </figure>
 </div>
 </section>
-<section id="importing-sound-files" class="level2">
-<h2 class="anchored" data-anchor-id="importing-sound-files">Importing sound files</h2>
+<section id="importing-sound-files" class="level1">
+<h1>Importing sound files</h1>
 <p>Annotators will receive learning sets of recordings inside a hard drive titled <em>Cricket Recordings/Annotations_S26</em>. Each annotator will have a directory with their name. Inside their named directory will be a list of recordings specifically assigned to them. For now navigate to the directory <em>learning_recordings</em> with labeled directories <em>t1-t4.</em></p>
 <p>To open a recording, click <code>file</code> &gt; <code>open sound recordings</code> and navigate to the directory with your training recordings—they’ll be <em>.wav</em> format (Figure 3).</p>
 <div class="quarto-figure quarto-figure-center">
@@ -211,8 +215,8 @@ ul.task-list li input[type="checkbox"] {
 </div>
 <p>Do not alter any default settings. Click <code>continue</code>. The original file will show doubles of the recording, and the waveform and spectrogram. Uncheck channel 2 on the side panel. Note: sometimes channel 2 has a much stronger signal than channel 1. If this is the case use channel 2.</p>
 </section>
-<section id="spectrogram-and-waveform" class="level2">
-<h2 class="anchored" data-anchor-id="spectrogram-and-waveform">Spectrogram and waveform</h2>
+<section id="spectrogram-and-waveform" class="level1">
+<h1>Spectrogram and waveform</h1>
 <p>The <strong>spectrogram</strong> is the primary panel that we’ll view when a sound file is played. The spectrogram represents the frequency of the calls (y-axis) across time (x-axis). The color of the call in the spectrogram represents the power (energy) emitted in the recording at each point in time. The color can be changed—black/white/gray tones might be the easiest to work with.</p>
 <p>The <strong>waveform</strong> displays an oscillogram showing amplitude (y-axis) across time (x-axis). This will be extremely useful for similar sounding Orthopterans. We can use the oscillogram to view chirp and pulse rate—the time between chirps (ch/s) and between pulses in a single chirp (ps/ch) which might be important for IDs. More on this later!</p>
 <div class="quarto-figure quarto-figure-right">
@@ -222,8 +226,8 @@ ul.task-list li input[type="checkbox"] {
 </figure>
 </div>
 </section>
-<section id="color-and-zoom-settings" class="level2">
-<h2 class="anchored" data-anchor-id="color-and-zoom-settings">Color and zoom settings</h2>
+<section id="color-and-zoom-settings" class="level1">
+<h1>Color and zoom settings</h1>
 <p>There are different colors available to view the spectrogram. The grayscale or jet (default) option might be the easiest/most consistent color to use.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -240,8 +244,8 @@ ul.task-list li input[type="checkbox"] {
 </figure>
 </div>
 </section>
-<section id="selection-table" class="level2">
-<h2 class="anchored" data-anchor-id="selection-table">Selection table</h2>
+<section id="selection-table" class="level1">
+<h1>Selection table</h1>
 <p>Editing the selection table is critical for annotating acoustic signals for this project. (1) right click the empty space next to the table columns and choose add annotation column; (2) name one column <strong><em>Annotation</em></strong> and another <strong><em>Notes.</em></strong> Keep both case sensitive. <strong><em>Annotation</em></strong> will recieve your primary ID. <strong><em>Notes</em></strong> will receive the alternative ID (if applicable).</p>
 <p>Click on the right of the selection table and choose Measurements. Add <strong><em>95% Frequency</em></strong> to the table. The low and high frequency which corresponds to the species ID will vary depending on the person annotating. The <strong><em>95% Frequency</em></strong> column will account for individual differences between annotators.</p>
 <div class="quarto-figure quarto-figure-center">
@@ -252,8 +256,8 @@ ul.task-list li input[type="checkbox"] {
 </div>
 <p>If you need to delete a selection, right click the selection in the table and choose <strong><em>Clear Active Selections</em></strong>.</p>
 </section>
-<section id="play-sound-in-ravenpro" class="level2">
-<h2 class="anchored" data-anchor-id="play-sound-in-ravenpro">Play sound in RavenPro</h2>
+<section id="play-sound-in-ravenpro" class="level1">
+<h1>Play sound in RavenPro</h1>
 <p>The controls for playing sound are located on the top toolbars (Figure 2). <code>Play</code> will start playing the recording continuously until paused. <code>Play Visible</code> will play the entire frequency range within the time series window. As the sound plays, a line moves across the spectrogram and waveform. For more information see the RavenPro manual, but we will mostly use <code>Play Visible</code> and <code>Filtered Play</code>. Once a signal is boxed, we can use <code>Filtered Play</code> to omit any sound that occurs outside of our selected box and then when we select <code>Play Visible</code>, it will only play the boxed signal. <u>This workflow is essentially the primary tools you will need to listen and isolate sound to make an accurate ID. We will revisit this on the <strong>Tutorial</strong> page.</u></p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -269,8 +273,8 @@ ul.task-list li input[type="checkbox"] {
 </figure>
 </div>
 </section>
-<section id="annotate-acoustic-signals" class="level2">
-<h2 class="anchored" data-anchor-id="annotate-acoustic-signals">Annotate acoustic signals</h2>
+<section id="annotate-acoustic-signals" class="level1">
+<h1>Annotate acoustic signals</h1>
 <p>Use the selection tool to draw a box around an acoustic signal. The box should be drawn using the selection tool <code>+</code> located on the top toolbar.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -299,6 +303,16 @@ ul.task-list li input[type="checkbox"] {
 </figure>
 </div>
 <p>At the lower frequencies the alternative ID might sometimes be <em>frog</em>. Some toad and <em>Oecanthus</em> species sound similar. If you’re unsure of the specific species it’s okay to only enter the genus. For instance, <em>Oecanthus</em> is almost always just entered as <em>Oecanthus</em>. The species in this genus have very similar stridulation patterns in the same frequency range. For more on this, continue to the <strong>Tutorial</strong> page.</p>
+</section>
+<section id="saving-a-selection-table" class="level1">
+<h1>Saving a selection table</h1>
+<p>Finally, to save a selection table navigate to <code>file</code> &gt; <code>Save "Sound 1" selection table (table 1) as</code> and leave the name as default. The default should be the exact same name as the corresponding sound file but with ~<em>Table.1.selections.txt</em> attached to the end.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/RavenPro_Intro/save_selection.jpg" class="img-fluid figure-img"></p>
+<figcaption>Figure 14. Save the selection table as the default name—the same name as its corresponding sound file. It’s important to check the directory to which the file is being saved. RavenPro will open random folders under <em>Save in:</em> .</figcaption>
+</figure>
+</div>
 <p><img src="images/cricket.jpg" class="img-fluid"></p>
 
 
