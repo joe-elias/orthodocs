@@ -84,4 +84,14 @@ Although both genus sound similar and occur at a similar frequency, based on the
 
 7.  Fill in the **Annotation** and **Notes** column accordingly.
 
+Now it's your turn! Try to ID and annotate the rest of the acoustic signals in this file. After which we will check your answers and continue on to the rest of the learning files.
+
+\*When finished make sure to:
+
+1.  Save all your selections. i.e., make sure you click `enter` once a box is drawn and that the selection you made is static in the selection table when the next box is drawn.
+2.  Save the selection table as the same base name as its corresponding sound file.
+3.  Save the selection table alongside its corresponding sound file in the correct directory.
+
+\*If you need any help with these last few steps please see the **Introduction to RavenPro** page.
+
 ![](images/cricket.jpg)
