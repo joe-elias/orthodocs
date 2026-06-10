@@ -1,5 +1,35 @@
 [
   {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "If it’s your first time annotating and identifying Orthoptera, start with this brief background of the project and then the Introduction to RavenPro page. This website is a collection of resources to help new and existing annotators learn Orthoptera ID, use RavenPro, and annotate acoustic signals well enough to train a convolutional neural network (CNN) for automated ID.",
+    "crumbs": [
+      "About"
+    ]
+  },
+  {
+    "objectID": "about.html#how-to-use-these-docs",
+    "href": "about.html#how-to-use-these-docs",
+    "title": "About",
+    "section": "",
+    "text": "If it’s your first time annotating and identifying Orthoptera, start with this brief background of the project and then the Introduction to RavenPro page. This website is a collection of resources to help new and existing annotators learn Orthoptera ID, use RavenPro, and annotate acoustic signals well enough to train a convolutional neural network (CNN) for automated ID.",
+    "crumbs": [
+      "About"
+    ]
+  },
+  {
+    "objectID": "about.html#project-background",
+    "href": "about.html#project-background",
+    "title": "About",
+    "section": "Project Background",
+    "text": "Project Background\nOrthoptera (crickets, katydids, grasshoppers, locusts) are declining more rapidly than other insect taxa and are an important part of soundscapes, the collective noises in an ecosystem that can indicate its health. Orthoptera provide numerous ecosystem functions and services including nutrient cycling, trophic support as food sources, entomophagy, and seed dispersal. Because they are sensitive to environmental change, they are declining more rapidly than other insect groups, with estimates reaching 2.1-2.7% per year (Welti et al. 2020). This sensitivity also makes them good bioindicators (Riede 1998, McNeil and Grozinger 2020) to be used as a tool for broader conservation management (Menz et al. 2013). Despite their importance to ecosystem function, there is limited consistent and long-term monitoring data for Orthoptera, especially for nocturnal species (e.g. katydids and crickets).\n\nWe will leverage a 25-year time series dataset of soundscape recordings – originally meant to collect amphibian calls—collected by USDA biologists in eastern Texas to measure the trends in Orthopteran communities over the last two decades to build stronger conclusions about community change and suspected decline alongside other environmental drivers (e.g., climate and land use change).\n\n\nAs annotators, our objective is to apply a pre-trained convolutional neural network (CNN)—a form of AI—to automatically ID Orthopteran stridulation patterns in digital and analog recordings. The stridulation patterns look similar to the image below, where each band of energy has a morphological pattern and occurs at a given frequency between 0 and ~8 kHz.\n\nThe total dataset is ~ 7,200 hours, but our goal is to taxonomically identify a subset of the data (a few hundred hours) to teach the CNN model to identify the rest of the 7,200 hours of recordings. We will listen to and annotate a subset of recordings from a 25-year dataset using the RavenPro sound analysis tool. The training data will feed into a pre-trained CNN network, BirdNet, originally developed for bird identification—both tools were developed by the K. Lisa Yang Center for Conservation Bioacoustics.\nOh, and recordings from 2000-2008 are in analog cassette format so we will be digitizing those as well! When completed this will be the largest consistent PAM dataset for Orthoptera in the world, and will inform conservation management endeavors for this taxa.",
+    "crumbs": [
+      "About"
+    ]
+  },
+  {
     "objectID": "Tutorial.html",
     "href": "Tutorial.html",
     "title": "Tutorial",
@@ -60,36 +90,6 @@
     ]
   },
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "If it’s your first time annotating and identifying Orthoptera, start with this brief background of the project and then the Introduction to RavenPro page. This website is a collection of resources to help new and existing annotators learn Orthoptera ID, use RavenPro, and annotate acoustic signals well enough to train a convolutional neural network (CNN) for automated ID.",
-    "crumbs": [
-      "About"
-    ]
-  },
-  {
-    "objectID": "about.html#how-to-use-these-docs",
-    "href": "about.html#how-to-use-these-docs",
-    "title": "About",
-    "section": "",
-    "text": "If it’s your first time annotating and identifying Orthoptera, start with this brief background of the project and then the Introduction to RavenPro page. This website is a collection of resources to help new and existing annotators learn Orthoptera ID, use RavenPro, and annotate acoustic signals well enough to train a convolutional neural network (CNN) for automated ID.",
-    "crumbs": [
-      "About"
-    ]
-  },
-  {
-    "objectID": "about.html#project-background",
-    "href": "about.html#project-background",
-    "title": "About",
-    "section": "Project Background",
-    "text": "Project Background\nOrthoptera (crickets, katydids, grasshoppers, locusts) are declining more rapidly than other insect taxa and are an important part of soundscapes, the collective noises in an ecosystem that can indicate its health. Orthoptera provide numerous ecosystem functions and services including nutrient cycling, trophic support as food sources, entomophagy, and seed dispersal. Because they are sensitive to environmental change, they are declining more rapidly than other insect groups, with estimates reaching 2.1-2.7% per year (Welti et al. 2020). This sensitivity also makes them good bioindicators (Riede 1998, McNeil and Grozinger 2020) to be used as a tool for broader conservation management (Menz et al. 2013). Despite their importance to ecosystem function, there is limited consistent and long-term monitoring data for Orthoptera, especially for nocturnal species (e.g. katydids and crickets).\n\nWe will leverage a 25-year time series dataset of soundscape recordings – originally meant to collect amphibian calls—collected by USDA biologists in eastern Texas to measure the trends in Orthopteran communities over the last two decades to build stronger conclusions about community change and suspected decline alongside other environmental drivers (e.g., climate and land use change).\n\n\nAs annotators, our objective is to apply a pre-trained convolutional neural network (CNN)—a form of AI—to automatically ID Orthopteran stridulation patterns in digital and analog recordings. The stridulation patterns look similar to the image below, where each band of energy has a morphological pattern and occurs at a given frequency between 0 and ~8 kHz.\n\nThe total dataset is ~ 7,200 hours, but our goal is to taxonomically identify a subset of the data (a few hundred hours) to teach the CNN model to identify the rest of the 7,200 hours of recordings. We will listen to and annotate a subset of recordings from a 25-year dataset using the RavenPro sound analysis tool. The training data will feed into a pre-trained CNN network, BirdNet, originally developed for bird identification—both tools were developed by the K. Lisa Yang Center for Conservation Bioacoustics.\nOh, and recordings from 2000-2008 are in analog cassette format so we will be digitizing those as well! When completed this will be the largest consistent PAM dataset for Orthoptera in the world, and will inform conservation management endeavors for this taxa.",
-    "crumbs": [
-      "About"
-    ]
-  },
-  {
     "objectID": "Analog Digitization.html",
     "href": "Analog Digitization.html",
     "title": "Analog Digitization",
@@ -147,6 +147,16 @@
     "text": "Welcome to the Orthoptera Bioacoustics Docs\nThis is a collaborative project through the Grames Lab at Binghamton Univeristy to restore a long-term passive acoustic monitoring (PAM) dataset to better understand spatial and temporal patterns in the nocturnal Orthopterans (crickets and katydids) of eastern Texas.\nContinue to the About page to get an introduction and background to the project.",
     "crumbs": [
       "Home"
+    ]
+  },
+  {
+    "objectID": "Resources.html",
+    "href": "Resources.html",
+    "title": "Resources",
+    "section": "",
+    "text": "Resources for Orthoptera ID\nThis page is a collection of resources that will be used throughout the duration of this project. They will all come in handy. The best workflow will start with the first two resources listed and then continue to compare the resources together to make an informed decision.\n\n1. Orthoptera Song Guide\nThis guide details all the possible species that occur in our sampling region along with their frequency range, signal morphology, and links to example recordings. This guide should be used every time an Orthopteran is identified in this project.\n\n\n2. Singing Insects of North America (SINA)\nSINA is the main resource used in the Orthoptera Song Guide. It will have examples and/or information for all the species in the sampling region. Other resources might not have a full record, but for some species other resources might provide valuable alternative examples to SINA and/or necessary information to make a proper ID.\n\n\n3. Song of Insects\nSong of Insects is an online database with the most common species. This database often has acoustic-specific information which SINA sometimes does not, as well as more examples of song patterns—sometimes recorded in the field. This can be useful to compare the variation between different resources and our field recordings.\n\n\n4. Xeno Canto\nXeno Canto is the best resource for field recordings but might not have all the species in the sampling region. Also, since Xeno Canto is a community science database the recording examples will be biased towards popular and common species.",
+    "crumbs": [
+      "Resources"
     ]
   }
 ]
