@@ -2,13 +2,16 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.8.25">
+<meta name="generator" content="quarto-1.9.38">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
 <title>Analog Digitization – Orthoptera Bioacoustics Docs</title>
 <style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
 div.columns{display: flex; gap: min(4vw, 1.5em);}
@@ -32,15 +35,14 @@ ul.task-list li input[type="checkbox"] {
 <meta name="quarto:offset" content="./">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-e31584831b205ffbb2d98406f31c2a5b.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-5dd68f7c947550bc37469a19221d6052.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -96,8 +98,9 @@ ul.task-list li input[type="checkbox"] {
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
-      <a href="./index.html" class="sidebar-logo-link">
-      </a>
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">Orthoptera Bioacoustics Docs</a> 
+    </div>
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
         <div class="sidebar-search">
@@ -130,6 +133,15 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">Analog Digitization</span></a>
   </div>
 </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Tutorial.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Tutorial</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+ <span class="menu-text">Resources.qmd</span>
+  </li>
     </ul>
     </div>
 </nav>
@@ -142,7 +154,22 @@ ul.task-list li input[type="checkbox"] {
   <ul>
   <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a></li>
   <li><a href="#using-the-portable-cassette-player" id="toc-using-the-portable-cassette-player" class="nav-link" data-scroll-target="#using-the-portable-cassette-player">Using the portable cassette player</a></li>
-  <li><a href="#digitization-steps" id="toc-digitization-steps" class="nav-link" data-scroll-target="#digitization-steps">Digitization Steps</a></li>
+  <li><a href="#digitization-steps" id="toc-digitization-steps" class="nav-link" data-scroll-target="#digitization-steps">Digitization Steps</a>
+  <ul class="collapse">
+  <li><a href="#record-the-metadata-for-each-tape" id="toc-record-the-metadata-for-each-tape" class="nav-link" data-scroll-target="#record-the-metadata-for-each-tape">1. Record the metadata for each tape</a></li>
+  <li><a href="#insert-the-cassette-tape" id="toc-insert-the-cassette-tape" class="nav-link" data-scroll-target="#insert-the-cassette-tape">2. Insert the cassette tape</a></li>
+  <li><a href="#rewind-or-fast-forward-the-tape-to-the-beginning" id="toc-rewind-or-fast-forward-the-tape-to-the-beginning" class="nav-link" data-scroll-target="#rewind-or-fast-forward-the-tape-to-the-beginning">3. Rewind or fast forward the tape to the beginning</a></li>
+  <li><a href="#press-play-and-record" id="toc-press-play-and-record" class="nav-link" data-scroll-target="#press-play-and-record">4. Press play and record</a></li>
+  <li><a href="#verify-and-rename-the-recording" id="toc-verify-and-rename-the-recording" class="nav-link" data-scroll-target="#verify-and-rename-the-recording">5. Verify and rename the recording</a></li>
+  <li><a href="#add-the-metadata-in-the-datasheet-and-mark-digitized-on-the-cassette-tape" id="toc-add-the-metadata-in-the-datasheet-and-mark-digitized-on-the-cassette-tape" class="nav-link" data-scroll-target="#add-the-metadata-in-the-datasheet-and-mark-digitized-on-the-cassette-tape">6. Add the metadata in the datasheet and mark digitized on the cassette tape</a></li>
+  <li><a href="#transfer-files-for-long-term-storage" id="toc-transfer-files-for-long-term-storage" class="nav-link" data-scroll-target="#transfer-files-for-long-term-storage">7. Transfer files for long-term storage</a></li>
+  </ul></li>
+  <li><a href="#issues-with-cassette-tapes" id="toc-issues-with-cassette-tapes" class="nav-link" data-scroll-target="#issues-with-cassette-tapes">Issues with cassette tapes</a>
+  <ul class="collapse">
+  <li><a href="#a.-sticky-tapes" id="toc-a.-sticky-tapes" class="nav-link" data-scroll-target="#a.-sticky-tapes">a. Sticky tapes</a></li>
+  <li><a href="#b.-issues-opening-the-recording-in-ravenpro" id="toc-b.-issues-opening-the-recording-in-ravenpro" class="nav-link" data-scroll-target="#b.-issues-opening-the-recording-in-ravenpro">b. Issues opening the recording in RavenPro</a></li>
+  <li><a href="#transfer-cassette-tapes-for-long-term-storage" id="toc-transfer-cassette-tapes-for-long-term-storage" class="nav-link" data-scroll-target="#transfer-cassette-tapes-for-long-term-storage">8. Transfer cassette tapes for long-term storage</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -170,42 +197,187 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="introduction" class="level2">
 <h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
-<p>Out of the total ~7,000 hours of PAM data, ~2,600 hours were recorded using cassette tapes. Cassette tapes are not a reliable analog format. Cassettes will degrade with time, which is why it’s critical that we preserve the PAM data in a digital format before the cassette tapes are no longer able to be digitized! Having a fully digitized PAM dataset which was consistently collected for 25 years will provide important basic knowledge on nocturnal vocalizing taxa for conservation management initiatives.</p>
+<p>A substantial portion of the long‑term PAM archive—~2,600 of ~7,000 total hours—was originally recorded on cassette tapes. Because cassette tapes are an inherently unstable analog medium, they degrade over time. This makes it urgent to digitize the remaining recordings before they reach a point where high‑fidelity transfer is no longer possible. Fully digitizing this 25‑year PAM dataset will save one of the few continuous acoustic records of nocturnal vocalizing insects. Such a dataset will provide baseline ecological knowledge essential for conservation management, long‑term monitoring, and understanding how nocturnal insect communities respond to land‑use and climate change.</p>
 </section>
 <section id="using-the-portable-cassette-player" class="level2">
 <h2 class="anchored" data-anchor-id="using-the-portable-cassette-player">Using the portable cassette player</h2>
-<p>We use portable cassette players to digitize the cassette tapes. These are handheld and seem to do a good enough job at preserving frequency with its corresponding acoustic signal.</p>
-<p><img src="images/digitization/tape_player.JPG" class="img-fluid"></p>
-<p>The cassette player plays the tape in real time (e.g., if the tape is 30 minutes long, it will take 30 minutes to digitize) and records the output onto an sd card. Below are some common features of the player:</p>
+<p>We use portable cassette players to digitize the cassette tapes. These are handheld and seem to do a good enough job at preserving frequency with its corresponding acoustic signal and species.</p>
+<p>The cassette player plays the tape in real time (e.g., if the tape is 30 minutes long, it will take 30 minutes to digitize) and records the output onto an sd card. Each cassette side is approximately 40 minutes. A 20-25 hour/week position should complete ~ 20 cassettes per week, give or take 1-2 cassettes. Double this number when running two cassette players at once, which is expected once you get used to the process. Below are some common features of the player:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/digitization/tape_player.JPG" class="img-fluid figure-img"></p>
+<figcaption>Figure 1. Portable cassette player used to digitize recordings in MP3 format.</figcaption>
+</figure>
+</div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/digitization/IMG_8124.jpg" class="img-fluid figure-img"></p>
-<figcaption>There is a small lip that opens the cassette player.</figcaption>
+<figcaption>Figure 2. There is a small lip that opens the cassette player to insert a cassette tape.</figcaption>
 </figure>
 </div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/digitization/IMG_8125.jpg" class="img-fluid figure-img"></p>
-<figcaption>The sd card is housed on the side of the cassette player with the on/off button.</figcaption>
+<figcaption>Figure 3. The sd card is housed on the side of the cassette player with the on/off button.</figcaption>
 </figure>
 </div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/digitization/IMG_8130.jpg" class="img-fluid figure-img"></p>
-<figcaption>Softly press the sd card to release it from the cassette player.</figcaption>
+<figcaption>Figure 4. Softly press the sd card to release it from the cassette player.</figcaption>
 </figure>
 </div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/digitization/IMG_8131.JPG" class="img-fluid figure-img"></p>
-<figcaption>The sd case has a corresponding thumbdrive to connect to a computer and view the recordings on RavenPro.</figcaption>
+<figcaption>Figure 5. The sd card has a corresponding thumb drive to connect to a computer and view the recordings on RavenPro.</figcaption>
 </figure>
 </div>
 </section>
 <section id="digitization-steps" class="level2">
 <h2 class="anchored" data-anchor-id="digitization-steps">Digitization Steps</h2>
+<section id="record-the-metadata-for-each-tape" class="level3">
+<h3 class="anchored" data-anchor-id="record-the-metadata-for-each-tape">1. Record the metadata for each tape</h3>
+<p>One of the most important components of this project is organization. <strong>We need to account for every single day and sampling period.</strong> Record everything that you are doing, or need to remember in order to account for every tape (both sides). You will be supplied with an online datasheet and organized boxes to keep organized.</p>
+<p><img src="images/digitization/metadata.JPG" class="img-fluid"></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/digitization/rewind_tape.JPG" class="img-fluid figure-img"></p>
+<figcaption>Figure 6. Each tape has the date, year, and site written on the tape and case. Keep these two things together at all times.</figcaption>
+</figure>
+</div>
+<p>For each tape write down the following information in the <a href="https://docs.google.com/spreadsheets/d/1hWTq60_fqj_c8tuf1j0HKcRtZBuAiiTWmOeOkW6RYlM/edit?usp=sharing">project datasheet</a>:</p>
+<ul>
+<li><p>Cassette <em>year-month-day</em></p></li>
+<li><p>Digitized? (<em>yes</em> - once it is digitized)</p></li>
+<li><p>Notes (if necessary)</p></li>
+</ul>
+<p>This datasheet and other resources for the project can be found in the <a href="https://drive.google.com/drive/folders/1AA-JOCykTJeGSYroZbn8_ZZ2O4xQYKov?usp=sharing">project’s google drive</a>.</p>
+</section>
+<section id="insert-the-cassette-tape" class="level3">
+<h3 class="anchored" data-anchor-id="insert-the-cassette-tape">2. Insert the cassette tape</h3>
+<p>Insert the tape (thin side down) into the cassette player and make sure the tape is between the two brackets.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/digitization/insert_tape2.JPG" class="img-fluid figure-img"></p>
+<figcaption>Figure 7. Insert the cassette tape between the brackets and ensure that the tape is fully fast forwarded or rewound.</figcaption>
+</figure>
+</div>
+</section>
+<section id="rewind-or-fast-forward-the-tape-to-the-beginning" class="level3">
+<h3 class="anchored" data-anchor-id="rewind-or-fast-forward-the-tape-to-the-beginning">3. Rewind or fast forward the tape to the beginning</h3>
+<p>Before playing the tape, make sure that the tape is fully rewound and fast forwarded. The tape roll on the right of the cassette will start when the play button is pressed.</p>
+<p><img src="images/digitization/fwd.JPG" class="img-fluid"></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/digitization/rewind_tape.JPG" class="img-fluid figure-img"></p>
+<figcaption>Figure 8. The pictured cassette tape is ready to be played now that it’s been rewound to the beginning of a tape roll.</figcaption>
+</figure>
+</div>
+</section>
+<section id="press-play-and-record" class="level3">
+<h3 class="anchored" data-anchor-id="press-play-and-record">4. Press play and record</h3>
+<p>Press play. Wait until you here a voice that will say the day and time. You can adjust the volume on the top of the player, or use headphones. The headphone jack is next to the on/off button.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/digitization/record.jpg" class="img-fluid figure-img"></p>
+<figcaption>Figure 9. Press play and wait until you hear a voice indicating the date and time. Press record. If you don’t hear a voice or an environmental soundscape in the first couple minutes there’s a good chance that the tape is stuck. In this case scroll down for further instructions.</figcaption>
+</figure>
+</div>
+<p>Once you hear the voice which indicates the date and time, immediately hold in the record button until you see <code>REC</code> on the right side of the screen. Ensure that the recorder is charged at all times. DO NOT start a recording at 1 bar of battery - plug it in and start the recording. If the recorder stops or dies mid-recording, you will need to start over - delete the partially digitized MP3 file. We want two recordings (front and back) per cassette.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/digitization/record1.jpg" class="img-fluid figure-img"></p>
+<figcaption>Figure 10. Press record and make sure the “REC” indicator is flashing. Adjust the volume as needed and ensure the battery has more than one bar.</figcaption>
+</figure>
+</div>
+<p>The tape will play for ~ 40-50 minutes. Maybe ~35 minutes of that will actually be passive acoustic monitoring (PAM) data and the rest will be left over tape. Once the end is reached, flip the tape around and repeat the process.</p>
+</section>
+<section id="verify-and-rename-the-recording" class="level3">
+<h3 class="anchored" data-anchor-id="verify-and-rename-the-recording">5. Verify and rename the recording</h3>
+<p>5a. I recommend running through no more than 4 cassette tapes (8 MP3 filts) before renaming the files and filling out the online datasheet. Attach the microsd card to the thumbdrive and connect it to a computer with RavenPro. <img src="images/clipboard-3589518255.jpeg" class="img-fluid" width="50"></p>
+<p>This tutorial already assumes that the user knows the basics of RavenPro. If not, please see the <strong>Introduction to RavenPro</strong> section of these docs.</p>
+<p>5b. Open the recording in RavenPro, which will be automatically saved in the microsd card as “TAPE##”.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/digitization/open_ravenpro.jpg" class="img-fluid figure-img"></p>
+<figcaption>Figure 11. Open the recording one by one in the RavenPro software to extract the metadata for each tape. In the image TAPE001 and TAPE002 are the front and back of one cassette tape.</figcaption>
+</figure>
+</div>
+<p>Since the cassette tapes hold multiple days of data, the recording will have multiple indicators (the voice of the Orthopteran god that tells us the date and time in the recording). Each broadband signal spanning 0-10 kHz is likely the voice indicator.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/digitization/indicator.jpg" class="img-fluid figure-img"></p>
+<figcaption>Figure 12. Each broadband signal, spaced 1 minute apart is likely metadata for each date and time.</figcaption>
+</figure>
+</div>
+<p>5c. Zoom in and listen to the first and last indicator to make sure all the dates listed on the tape/tape case are included. These date stamps should occur every minute in the recording.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/digitization/indicator_zoom.jpg" class="img-fluid figure-img"></p>
+<figcaption>Figure 13. Zoom in to listen to the date and time indicator.</figcaption>
+</figure>
+</div>
+<p>5d. Once the recording has been verified, name the corresponding file as <em>site_date#1_date#2</em> listed in the file.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/clipboard-310219674.jpeg" class="img-fluid figure-img"></p>
+<figcaption>Figure 14. The name format should resemble the ones in the image. P# indicates the site and the dates span from the earliest to latest on each individual tape.</figcaption>
+</figure>
+</div>
+<section id="important-it-is-absolutely-crucial-to-use-standard-formatting-and-that-the-dates-listed-in-the-file-name-match-the-data-in-the-file.-things-can-get-disorganized-very-quickly-considering-that-we-have-the-same-date-for-multiple-years-and-sites-and-that-the-voice-of-the-orthopteran-god-does-not-explicitely-say-the-year-or-site-in-the-recording.-1-all-cassettes-stay-with-their-corresponding-case-and-2-check-the-recording-to-make-sure-it-was-digitized-properly-before-moving-on-to-the-next-batch-andor-recording-the-information-in-the-datasheet." class="level4">
+<h4 class="anchored" data-anchor-id="important-it-is-absolutely-crucial-to-use-standard-formatting-and-that-the-dates-listed-in-the-file-name-match-the-data-in-the-file.-things-can-get-disorganized-very-quickly-considering-that-we-have-the-same-date-for-multiple-years-and-sites-and-that-the-voice-of-the-orthopteran-god-does-not-explicitely-say-the-year-or-site-in-the-recording.-1-all-cassettes-stay-with-their-corresponding-case-and-2-check-the-recording-to-make-sure-it-was-digitized-properly-before-moving-on-to-the-next-batch-andor-recording-the-information-in-the-datasheet."><strong>IMPORTANT</strong>: It is absolutely crucial to use standard formatting, and that the dates listed in the file name match the data in the file. Things can get disorganized very quickly considering that we have the same date for multiple years and sites, and that the voice of the Orthopteran god does not explicitely say the year or site in the recording. (1) All cassettes stay with their corresponding case and (2) check the recording to make sure it was digitized properly before moving on to the next batch and/or recording the information in the datasheet.</h4>
+<p><u>Any discrepancies will result in multiple cassettes having to be re-digitized—that is if we are able to find what is missing. It would involve digging through multiple boxes filled with hundreds of cassette tapes.</u></p>
+</section>
+</section>
+<section id="add-the-metadata-in-the-datasheet-and-mark-digitized-on-the-cassette-tape" class="level3">
+<h3 class="anchored" data-anchor-id="add-the-metadata-in-the-datasheet-and-mark-digitized-on-the-cassette-tape">6. Add the metadata in the datasheet and mark digitized on the cassette tape</h3>
+<p>Once the recording has been verified and correctly named, mark “yes” under “Digitized (y/n):” in your notes. Move on to the next cassette tape.</p>
+<p>As a second form of verification and organization we will write the digitization date and the initials of the person that digitized the tape on the back of the case only after verifying that the recording we digitized properly and renamed, and the metadata added to the datasheet.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/digitization/digitization_date.jpg" class="img-fluid figure-img"></p>
+<figcaption>Figure 15. Mark the cassette tape as digitized, enter the metadata into the datasheet, and mark the tape as digitized.</figcaption>
+</figure>
+</div>
+</section>
+<section id="transfer-files-for-long-term-storage" class="level3">
+<h3 class="anchored" data-anchor-id="transfer-files-for-long-term-storage">7. Transfer files for long-term storage</h3>
+<p>Transfer the files from the cassette player thumb drive to the larger storage hard drive kept in the lab. Once you are sure that the files transferred completely, delete the files from the cassette play thumb drive.</p>
+<p>All cassette tapes that are successfully digitized will be placed in their own separate box that will be organized by site #. The same will be done for cassettes that had issues. We will digitize all the cassettes for a site before moving on to the next site.</p>
+</section>
+</section>
+<section id="issues-with-cassette-tapes" class="level2">
+<h2 class="anchored" data-anchor-id="issues-with-cassette-tapes">Issues with cassette tapes</h2>
+<p>Some of these cassette tapes will have issues. If this issues persist which results in the tape not being able to be digitized, (1) make sure the tape does not stay in the datasheet and especially make sure that this tape does not get marked as “yes” under “digitized? (y/n)” or on the tape itself; (2) insert a piece of paper in the case that says “issue” - and briefly describe the issue.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/clipboard-924703694.jpeg" class="img-fluid figure-img"></p>
+<figcaption>Figure 16. Some cassettes will already have degraded and will need further restoration steps.</figcaption>
+</figure>
+</div>
+<section id="a.-sticky-tapes" class="level3">
+<h3 class="anchored" data-anchor-id="a.-sticky-tapes">a. Sticky tapes</h3>
+<p>Most commonly the cassette tapes might play very slowly, or might not play at all. If this occurs you could try fast forwarding or rewinding a couple seconds to unstick the tape or manually turning the tape a little. If the issue persists, mark the tape with a piece of paper detailing the issue and store it separate from the digitized tapes.</p>
+</section>
+<section id="b.-issues-opening-the-recording-in-ravenpro" class="level3">
+<h3 class="anchored" data-anchor-id="b.-issues-opening-the-recording-in-ravenpro">b. Issues opening the recording in RavenPro</h3>
+<p>i. <em>The file is corrupt or unreadable</em>. Before placing the cassette tape with others that have issues, try restoring the thumb drive. This issue is common if you don’t properly eject the thumb drive before removing it from the computer.</p>
+<p>ii. <em>RavenPro is having issues opening the file due to storage capacity</em>. Try restarting RavenPro—this is often the fix.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/digitization/error.jpg" class="img-fluid figure-img"></p>
+<figcaption>Figure 17. An example of an error message that RavenPro might throw out when opening sound files.</figcaption>
+</figure>
+</div>
+</section>
+<section id="transfer-cassette-tapes-for-long-term-storage" class="level3">
+<h3 class="anchored" data-anchor-id="transfer-cassette-tapes-for-long-term-storage">8. Transfer cassette tapes for long-term storage</h3>
+<p>All cassette tapes that are successfully digitized will be placed in their own separate box that will be organized by site #. The same will be done for cassettes that had issues. We will digitize all the cassettes for a site before moving on to the next site.</p>
+<p><img src="images/cricket.jpg" class="img-fluid"></p>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
@@ -282,7 +454,7 @@ ul.task-list li input[type="checkbox"] {
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp('/' + window.location.host + '/');
+        var filterRegex = new RegExp("https:\/\/joe-elias\.github\.io\/orthodocs\/");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }

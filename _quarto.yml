@@ -12,7 +12,8 @@ website:
       - about.qmd
       - Introduction to RavenPro.qmd
       - Analog Digitization.qmd
-
+      - Tutorial.qmd
+      - Resources.qmd
 format:
   html:
     theme:
