@@ -1,65 +1,5 @@
 [
   {
-    "objectID": "Tutorial.html",
-    "href": "Tutorial.html",
-    "title": "Tutorial",
-    "section": "",
-    "text": "This tutorial assumes that the user has general knowledge of RavenPro. Please see the Introduction to RavenPro page for more information. To start:\n\nImport a sound file.\nCreate an Annotation and Notes column in a selection table.\nAdd the 95% Frequency column to the selection table.",
-    "crumbs": [
-      "Tutorial"
-    ]
-  },
-  {
-    "objectID": "Tutorial.html#box-a-call",
-    "href": "Tutorial.html#box-a-call",
-    "title": "Tutorial",
-    "section": "1. Box a call",
-    "text": "1. Box a call\nUse the selection tool to draw a box around a suspected Orthopteran stridulation. Omit the reverberations and include only the strongest parts of the signal.\n\n\n\nFigure 1. Select the Orthopteran signal at ~ 5kHz and press enter.\n\n\nLet’s figure out how to ID this call. Open the Orthoptera Call Guide which is the first step one should take to ID a signal. This reference guide has all the possible stridulating Orthopterans in Eastern Texas.",
-    "crumbs": [
-      "Tutorial"
-    ]
-  },
-  {
-    "objectID": "Tutorial.html#describe-the-sound",
-    "href": "Tutorial.html#describe-the-sound",
-    "title": "Tutorial",
-    "section": "2. Describe the sound",
-    "text": "2. Describe the sound\nPlay your selection using the Filtered Play function so that only the frequency range that is within the boxed signal plays. Describe the sound. Is it a chirp (or chorus of chirps)— individual buzzy or chime-like notes, or is it a trill—a single and consistent note? It’s best to decide this by sound and by visually inspecting the signal morphology. Sometimes chirping species chorus—many chirps happening at once—resulting in the signal morphology resembling a trill. Our selection appears to be a chorusing species—when zoomed, we can distinctly see many strong signals accumulating between ~5 and ~5.6 kHz.\n\n\n\nFigure 2. Our selection seems to be many individual chirps. This is many individuals of the same species chorusing at once.",
-    "crumbs": [
-      "Tutorial"
-    ]
-  },
-  {
-    "objectID": "Tutorial.html#consider-the-frequency-range",
-    "href": "Tutorial.html#consider-the-frequency-range",
-    "title": "Tutorial",
-    "section": "2. Consider the frequency range",
-    "text": "2. Consider the frequency range\nWe’ve established that our boxed signal might be described as many (chorusing) buzzy chirps that last ~0.5-1 second each. Now let’s consider the frequency. If we look at the Orthoptera Call Guide we see a couple columns that might help ID the species like Frequency and Call Pattern.\nLook at the Frequency Column. Open the links for any species that fall close to the frequency range—considering the min to max frequency, or middle and 95% frequency in our selection. This is exactly why it’s important to box signals accurately—including too much noise in the selection will make it very difficult to narrow down an ID based on frequency and sound. The link attached to each species will take you to an example of their stridulation from the Singing Insects of North America (SINA) database. There will be variation when comparing the SINA recordings to our own. In most cases, the reference recordings on SINA are taken in a prefect lab environment whereas our field recordings will have variation in sound and frequency range—keep this in mind, it’s important that your ID is based on multiple resources (see the Resources page) and types of ID support (e.g., sound, frequency, pulse rate). This rule will vary—some species are easier to ID by sound than others.\nThe signal in question is a chirping species that is chorusing. It is within the range of 5-5.6kHz, and it is giving off buzzy ~0.5-1 sec signals. Just based on sound we might surmise that it could be Orocharis saltator or Gryllus pennsylvanicus.\n\n\n\n\nFigure 3. Two reference spectrograms of O. saltator (top) and G. pennsylvanicus (bottom) from SINA used to compare against our spectrogram in RavenPro.\n\n\nHowever, G. pennsylvanicus has a lighter, less buzzy sound than O. saltator, and typically occurs at a lower frequency. Therefore, we can be confident that there’s no other species this signal can belong to other than O. saltator.",
-    "crumbs": [
-      "Tutorial"
-    ]
-  },
-  {
-    "objectID": "Tutorial.html#enter-id-information-in-the-selection-table",
-    "href": "Tutorial.html#enter-id-information-in-the-selection-table",
-    "title": "Tutorial",
-    "section": "3. Enter ID information in the selection table",
-    "text": "3. Enter ID information in the selection table\nEnter our ID under the Annotation column. Since we’re confident in our ID, we don’t need any secondary ID in the Notes column. Make sure that the name in the Annotation column is consistent—‘Genus_species’ (i.e., Orocharis_saltator).\n\n\n\nFigure 4. Once the signal is identified, enter the primary species ID as Genus_species in the Annotation column.",
-    "crumbs": [
-      "Tutorial"
-    ]
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Welcome to the Orthoptera Bioacoustics Docs",
-    "section": "",
-    "text": "Welcome to the Orthoptera Bioacoustics Docs\nThis is a collaborative project through the Grames Lab at Binghamton Univeristy to restore a long-term passive acoustic monitoring (PAM) dataset to better understand spatial and temporal patterns in the nocturnal Orthopterans (crickets and katydids) of eastern Texas.\nContinue to the About page to get an introduction and background to the project.",
-    "crumbs": [
-      "Home"
-    ]
-  },
-  {
     "objectID": "about.html",
     "href": "about.html",
     "title": "About",
@@ -87,6 +27,16 @@
     "text": "Project Background\nOrthoptera (crickets, katydids, grasshoppers, locusts) are declining more rapidly than other insect taxa and are an important part of soundscapes, the collective noises in an ecosystem that can indicate its health. Orthoptera provide numerous ecosystem functions and services including nutrient cycling, trophic support as food sources, entomophagy, and seed dispersal. Because they are sensitive to environmental change, they are declining more rapidly than other insect groups, with estimates reaching 2.1-2.7% per year (Welti et al. 2020). This sensitivity also makes them good bioindicators (Riede 1998, McNeil and Grozinger 2020) to be used as a tool for broader conservation management (Menz et al. 2013). Despite their importance to ecosystem function, there is limited consistent and long-term monitoring data for Orthoptera, especially for nocturnal species (e.g. katydids and crickets).\n\nWe will leverage a 25-year time series dataset of soundscape recordings – originally meant to collect amphibian calls—collected by USDA biologists in eastern Texas to measure the trends in Orthopteran communities over the last two decades to build stronger conclusions about community change and suspected decline alongside other environmental drivers (e.g., climate and land use change).\n\n\nAs annotators, our objective is to apply a pre-trained convolutional neural network (CNN)—a form of AI—to automatically ID Orthopteran stridulation patterns in digital and analog recordings. The stridulation patterns look similar to the image below, where each band of energy has a morphological pattern and occurs at a given frequency between 0 and ~8 kHz.\n\nThe total dataset is ~ 7,200 hours, but our goal is to taxonomically identify a subset of the data (a few hundred hours) to teach the CNN model to identify the rest of the 7,200 hours of recordings. We will listen to and annotate a subset of recordings from a 25-year dataset using the RavenPro sound analysis tool. The training data will feed into a pre-trained CNN network, BirdNet, originally developed for bird identification—both tools were developed by the K. Lisa Yang Center for Conservation Bioacoustics.\nOh, and recordings from 2000-2008 are in analog cassette format so we will be digitizing those as well! When completed this will be the largest consistent PAM dataset for Orthoptera in the world, and will inform conservation management endeavors for this taxa.",
     "crumbs": [
       "About"
+    ]
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Welcome to the Orthoptera Bioacoustics Docs",
+    "section": "",
+    "text": "Welcome to the Orthoptera Bioacoustics Docs\nThis is a collaborative project through the Grames Lab at Binghamton Univeristy to restore a long-term passive acoustic monitoring (PAM) dataset to better understand spatial and temporal patterns in the nocturnal Orthopterans (crickets and katydids) of eastern Texas.\nContinue to the About page to get an introduction and background to the project.",
+    "crumbs": [
+      "Home"
     ]
   },
   {
@@ -147,6 +97,56 @@
     "text": "Getting started in RavenPro\nRaven Pro is a software program for the acquisition, visualization, measurement, and analysis of sounds developed by the K. Lisa Yang Center for Conservation Bioacoustics at the Cornell Lab of Ornithology. Open RavenPro, which will have an a desktop icon like this: \nRavenPro should open to a blank workbench (Figure 1).\n\n\n\nFigure 1. Opening screen on the RavenPro software.\n\n\nThere are many components and configurations for the RavenPro software. Included in these docs are the main components that we’ll use. For a more detailed tutorial of RavenPro, please see its user manual.\n\n\n\nFigure 2. The main components of RavenPro.\n\n\n\n\nImporting sound files\nAnnotators will receive learning sets of recordings inside a hard drive titled Cricket Recordings/Annotations_S26. Each annotator will have a directory with their name. Inside their named directory will be a list of recordings specifically assigned to them. For now navigate to the directory learning_recordings with labeled directories t1-t4.\nTo open a recording, click file &gt; open sound recordings and navigate to the directory with your training recordings—they’ll be .wav format (Figure 3).\n\n\n\nFigure 3. Open sound files in RavenPro.\n\n\nDo not alter any default settings. Click continue. The original file will show doubles of the recording, and the waveform and spectrogram. Uncheck channel 2 on the side panel. Note: sometimes channel 2 has a much stronger signal than channel 1. If this is the case use channel 2.\n\n\nSpectrogram and waveform\nThe spectrogram is the primary panel that we’ll view when a sound file is played. The spectrogram represents the frequency of the calls (y-axis) across time (x-axis). The color of the call in the spectrogram represents the power (energy) emitted in the recording at each point in time. The color can be changed—black/white/gray tones might be the easiest to work with.\nThe waveform displays an oscillogram showing amplitude (y-axis) across time (x-axis). This will be extremely useful for similar sounding Orthopterans. We can use the oscillogram to view chirp and pulse rate—the time between chirps (ch/s) and between pulses in a single chirp (ps/ch) which might be important for IDs. More on this later!\n\n\n\nFigure 4. Display of the spectrogram and waveform with the channel 2 and waveform unchecked. For easy viewing during the first pass of the recording it’s okay to uncheck the waveform and keep it unchecked until you need it.\n\n\n\n\nColor and zoom settings\nThere are different colors available to view the spectrogram. The grayscale or jet (default) option might be the easiest/most consistent color to use.\n\n\n\nFigure 5. Drop down menu for color options.\n\n\nZoom the spectrogram window as needed. This isn’t mandatory but is reccomended since some species might need to be boxed in sections if their calling is inconsistent; the same species’ signal spaced more than 3 seconds apart from each other.\n\n\n\n\nFigure 6. Two modes of zooming the spectrogram and/or waveform. (1) click in the window (spectrogram or waveform); (2) use the zoom button in the top panel or bottom right corner of the RavenPro window. The |--| button in the bottom right window will reset the zoom to its default.\n\n\n\n\nSelection table\nEditing the selection table is critical for annotating acoustic signals for this project. (1) right click the empty space next to the table columns and choose add annotation column; (2) name one column Annotation and another Notes. Keep both case sensitive. Annotation will recieve your primary ID. Notes will receive the alternative ID (if applicable).\nClick on the right of the selection table and choose Measurements. Add 95% Frequency to the table. The low and high frequency which corresponds to the species ID will vary depending on the person annotating. The 95% Frequency column will account for individual differences between annotators.\n\n\n\nFigure 7. Editing the selection table for Orthoptera annotations.\n\n\nIf you need to delete a selection, right click the selection in the table and choose Clear Active Selections.\n\n\nPlay sound in RavenPro\nThe controls for playing sound are located on the top toolbars (Figure 2). Play will start playing the recording continuously until paused. Play Visible will play the entire frequency range within the time series window. As the sound plays, a line moves across the spectrogram and waveform. For more information see the RavenPro manual, but we will mostly use Play Visible and Filtered Play. Once a signal is boxed, we can use Filtered Play to omit any sound that occurs outside of our selected box and then when we select Play Visible, it will only play the boxed signal. This workflow is essentially the primary tools you will need to listen and isolate sound to make an accurate ID. We will revisit this on the Tutorial page.\n\n\n\nFigure 8. Playback tool bar which is located at the top of the RavenPro window (Charif, Waak, and Strickman 2010). The volume setting is positioned next to the play settings.\n\n\nRecordings can be quieter than the sample recordings online, that are used to ID. Its recommended to turn up the volume within RavenPro and keep the volume at a reasonable level on the computer so that you don’t blow your eardrums every time you switch between software!\n\n\n\nFigure 9. Increase or decrease sound levels only within the RavenPro software.\n\n\n\n\nAnnotate acoustic signals\nUse the selection tool to draw a box around an acoustic signal. The box should be drawn using the selection tool + located on the top toolbar.\n\n\n\nFigure 10. Selection tool used to draw a box around an acoustic signal. Bonus: the pointer finger icon allows the user to select a boxed signal to edit its extent and position. The same thing can be accomplished by clicking the selection in the selection table.\n\n\n\n\n\nFigure 11. An example of a boxed acoustic signal. Notice how tight I boxed the signal. Leave out the reverberations—the portion of the signal that fades as the energy dissipates. We’re interested in the primary signal that’s emitted by the Orthopteran stridulation.\n\n\nOnce a box is drawn around a signal, press enter. A popup box will appear—either press enter again and create an empty selection in the selection table, or directly enter the ID and alternative ID, if necessary, and then press enter to add to the selection table.\n\n\n\nFigure 12. Selection pop-up that needs to be saved (press enter) to the selection table. Otherwise, once another selection is made, the previous one will disappear. To change this workflow, uncheck the option that says “Show this dialog whenever a selection is committed.\n\n\nWhen entering an ID, put the primary ID in the Annotation column and the secondary ID—if there is one—in the Notes column. IDs should be formatted as Genus_species—case sensitive. If there are more than one alternative ID, format the entry Genus_species_or_Genus_species.\n\n\n\nFigure 13. Proper formatting for an ID. This specific signal has no other species within the frequency range that sounds similar, so the Notes column is left empty.\n\n\nAt the lower frequencies the alternative ID might sometimes be frog. Some toad and Oecanthus species sound similar. If you’re unsure of the specific species it’s okay to only enter the genus. For instance, Oecanthus is almost always just entered as Oecanthus. The species in this genus have very similar stridulation patterns in the same frequency range. For more on this, continue to the Tutorial page.\n\n\nSaving a selection table\nFinally, to save a selection table navigate to file &gt; Save \"Sound 1\" selection table (table 1) as and leave the name as default. The default should be the exact same name as the corresponding sound file but with ~Table.1.selections.txt attached to the end.\n\n\n\nFigure 14. Save the selection table as the default name—the same name as its corresponding sound file. It’s important to check the directory to which the file is being saved. RavenPro will open random folders under Save in: .",
     "crumbs": [
       "Introduction to RavenPro"
+    ]
+  },
+  {
+    "objectID": "Tutorial.html",
+    "href": "Tutorial.html",
+    "title": "Tutorial",
+    "section": "",
+    "text": "This tutorial assumes that the user has general knowledge of RavenPro. If not, please see the Introduction to RavenPro page for more information. To start:\n\nImport a sound file.\nCreate an Annotation and Notes column in a selection table.\nAdd the 95% Frequency column to the selection table.",
+    "crumbs": [
+      "Tutorial"
+    ]
+  },
+  {
+    "objectID": "Tutorial.html#box-a-call",
+    "href": "Tutorial.html#box-a-call",
+    "title": "Tutorial",
+    "section": "1. Box a call",
+    "text": "1. Box a call\nUse the selection tool to draw a box around a suspected Orthopteran stridulation. Omit the reverberations and include only the strongest parts of the signal.\n\n\n\nFigure 1. Select the Orthopteran signal at ~ 5kHz and press enter.\n\n\nLet’s figure out how to ID this call at ~5-5.5 kHz. Open the Orthoptera Call Guide which is the first step one should take to ID a signal. This reference guide has all the possible stridulating Orthopterans in Eastern Texas.",
+    "crumbs": [
+      "Tutorial"
+    ]
+  },
+  {
+    "objectID": "Tutorial.html#describe-the-sound",
+    "href": "Tutorial.html#describe-the-sound",
+    "title": "Tutorial",
+    "section": "2. Describe the sound",
+    "text": "2. Describe the sound\nBox the signal. Play your selection using the Filtered Play function so that only the frequency range that is within the boxed signal is played. Describe the sound. Is it a chirp (or a chorus of chirps)—individual buzzy or chime-like notes, or is it a trill—a single and consistent note? It’s best to decide this by sound and by visually inspecting the signal morphology. Sometimes chirping species chorus—many chirps happening at once—resulting in the signal morphology resembling a trill. In this case it’s only possible to recognize the chorus as a chirping species by auditory recognition, so pay careful attention. Our selection appears to be a chorusing species—when zoomed, we can see many strong individual signals accumulating between ~5 and ~5.6 kHz.\n\n\n\nFigure 2. Our selection seems to be many individual chirps. This is many individuals of the same species chorusing at once.",
+    "crumbs": [
+      "Tutorial"
+    ]
+  },
+  {
+    "objectID": "Tutorial.html#consider-the-frequency-range",
+    "href": "Tutorial.html#consider-the-frequency-range",
+    "title": "Tutorial",
+    "section": "2. Consider the frequency range",
+    "text": "2. Consider the frequency range\nWe’ve established that our boxed signal might be described as many (chorusing) buzzy chirps that last ~0.5-1 second each. Now let’s consider the frequency. Open the Orthoptera Song Guide.\nLook at the Frequency Column. Open the links for any species that fall close to the frequency range of our boxed signal—considering the min to max frequency, or middle and 95% frequency. This is why it’s important to box signals accurately—including too much noise in the selection will make it very difficult to narrow down an ID based on frequency and sound. Each species has a link to the Singing Insects of North America (SINA) database. There will be variation when comparing the SINA recordings to our own. In most cases, the reference recordings on SINA are taken in a prefect environment whereas our field recordings will have variation in sound and frequency range—keep this in mind. Base your ID on multiple resources (see the Resources page) and types of ID support (e.g., sound, frequency, pulse rate). This rule will vary—some species are easier to ID by sound than others.\nPut it all together: the signal in question is a chirping species that is chorusing. It is within the range of 5-5.6kHz, and it is giving off buzzy ~0.5-1 sec signals. Based on sound we might surmise that it could be Orocharis saltator or Gryllus pennsylvanicus.\n\n\n\n\nFigure 3. Two reference spectrograms of O. saltator (top) and G. pennsylvanicus (bottom) from SINA used to compare against our signal in RavenPro.\n\n\nHowever, G. pennsylvanicus has a lighter, less buzzy sound than our signal and O. saltator, and typically occurs at a lower frequency. Therefore, we can be confident that there’s no other species this signal can belong to other than O. saltator.",
+    "crumbs": [
+      "Tutorial"
+    ]
+  },
+  {
+    "objectID": "Tutorial.html#enter-id-information-in-the-selection-table",
+    "href": "Tutorial.html#enter-id-information-in-the-selection-table",
+    "title": "Tutorial",
+    "section": "3. Enter ID information in the selection table",
+    "text": "3. Enter ID information in the selection table\nEnter our ID under the Annotation column. Since we’re confident in our ID, we don’t need a secondary ID in the Notes column. Make sure that the name in the Annotation column is consistent—‘Genus_species’ (i.e., Orocharis_saltator).\n\n\n\nFigure 4. Once the signal is identified, enter the primary species ID as Genus_species in the Annotation column.",
+    "crumbs": [
+      "Tutorial"
     ]
   }
 ]
