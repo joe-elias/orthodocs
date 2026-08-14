@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Getting started in RavenPro – Orthoptera Bioacoustics Docs</title>
+<title>Introduction to RavenPro – Orthoptera Bioacoustics Docs</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -42,26 +42,23 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-b85bc7c33db8c58e0ec93c3465666fed.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-9d96f532d65220ca877c0304385df42f.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-df07115ad9f15e2ef3479c789e6873c8.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="site_libs/bootstrap/bootstrap-9d96f532d65220ca877c0304385df42f.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-e3adbaa939bcd423dddc8c8a834270b4.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
-  "location": "navbar",
+  "location": "sidebar",
   "copy-button": false,
   "collapse-after": 3,
-  "panel-placement": "end",
-  "type": "overlay",
+  "panel-placement": "start",
+  "type": "textbox",
   "limit": 50,
   "keyboard-shortcut": [
     "f",
     "/",
     "s"
   ],
+  "show-item-context": false,
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -81,169 +78,7 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="nav-sidebar floating quarto-light"><script id="quarto-html-before-body" type="application/javascript">
-    const toggleBodyColorMode = (bsSheetEl) => {
-      const mode = bsSheetEl.getAttribute("data-mode");
-      const bodyEl = window.document.querySelector("body");
-      if (mode === "dark") {
-        bodyEl.classList.add("quarto-dark");
-        bodyEl.classList.remove("quarto-light");
-      } else {
-        bodyEl.classList.add("quarto-light");
-        bodyEl.classList.remove("quarto-dark");
-      }
-    }
-    const toggleBodyColorPrimary = () => {
-      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
-      if (bsSheetEl) {
-        toggleBodyColorMode(bsSheetEl);
-      }
-    }
-    const setColorSchemeToggle = (alternate) => {
-      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
-      for (let i=0; i < toggles.length; i++) {
-        const toggle = toggles[i];
-        if (toggle) {
-          if (alternate) {
-            toggle.classList.add("alternate");
-          } else {
-            toggle.classList.remove("alternate");
-          }
-        }
-      }
-    };
-    const toggleColorMode = (alternate) => {
-      // Switch the stylesheets
-      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
-      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
-      manageTransitions('#quarto-margin-sidebar .nav-link', false);
-      if (alternate) {
-        // note: dark is layered on light, we don't disable primary!
-        enableStylesheet(alternateStylesheets);
-        for (const sheetNode of alternateStylesheets) {
-          if (sheetNode.id === "quarto-bootstrap") {
-            toggleBodyColorMode(sheetNode);
-          }
-        }
-      } else {
-        disableStylesheet(alternateStylesheets);
-        enableStylesheet(primaryStylesheets)
-        toggleBodyColorPrimary();
-      }
-      manageTransitions('#quarto-margin-sidebar .nav-link', true);
-      // Switch the toggles
-      setColorSchemeToggle(alternate)
-      // Hack to workaround the fact that safari doesn't
-      // properly recolor the scrollbar when toggling (#1455)
-      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
-        manageTransitions("body", false);
-        window.scrollTo(0, 1);
-        setTimeout(() => {
-          window.scrollTo(0, 0);
-          manageTransitions("body", true);
-        }, 40);
-      }
-    }
-    const disableStylesheet = (stylesheets) => {
-      for (let i=0; i < stylesheets.length; i++) {
-        const stylesheet = stylesheets[i];
-        stylesheet.rel = 'disabled-stylesheet';
-      }
-    }
-    const enableStylesheet = (stylesheets) => {
-      for (let i=0; i < stylesheets.length; i++) {
-        const stylesheet = stylesheets[i];
-        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
-          stylesheet.rel = 'stylesheet';
-        }
-      }
-    }
-    const manageTransitions = (selector, allowTransitions) => {
-      const els = window.document.querySelectorAll(selector);
-      for (let i=0; i < els.length; i++) {
-        const el = els[i];
-        if (allowTransitions) {
-          el.classList.remove('notransition');
-        } else {
-          el.classList.add('notransition');
-        }
-      }
-    }
-    const isFileUrl = () => {
-      return window.location.protocol === 'file:';
-    }
-    const hasAlternateSentinel = () => {
-      let styleSentinel = getColorSchemeSentinel();
-      if (styleSentinel !== null) {
-        return styleSentinel === "alternate";
-      } else {
-        return false;
-      }
-    }
-    const setStyleSentinel = (alternate) => {
-      const value = alternate ? "alternate" : "default";
-      if (!isFileUrl()) {
-        window.localStorage.setItem("quarto-color-scheme", value);
-      } else {
-        localAlternateSentinel = value;
-      }
-    }
-    const getColorSchemeSentinel = () => {
-      if (!isFileUrl()) {
-        const storageValue = window.localStorage.getItem("quarto-color-scheme");
-        return storageValue != null ? storageValue : localAlternateSentinel;
-      } else {
-        return localAlternateSentinel;
-      }
-    }
-    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
-      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
-      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
-      let newTheme = '';
-      if(authorPrefersDark) {
-        newTheme = isAlternate ? baseTheme : alternateTheme;
-      } else {
-        newTheme = isAlternate ? alternateTheme : baseTheme;
-      }
-      const changeGiscusTheme = () => {
-        // From: https://github.com/giscus/giscus/issues/336
-        const sendMessage = (message) => {
-          const iframe = document.querySelector('iframe.giscus-frame');
-          if (!iframe) return;
-          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
-        }
-        sendMessage({
-          setConfig: {
-            theme: newTheme
-          }
-        });
-      }
-      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
-      if (isGiscussLoaded) {
-        changeGiscusTheme();
-      }
-    };
-    const authorPrefersDark = false;
-    const darkModeDefault = authorPrefersDark;
-      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
-      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
-    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
-    // Dark / light mode switch
-    window.quartoToggleColorScheme = () => {
-      // Read the current dark / light value
-      let toAlternate = !hasAlternateSentinel();
-      toggleColorMode(toAlternate);
-      setStyleSentinel(toAlternate);
-      toggleGiscusIfUsed(toAlternate, darkModeDefault);
-      window.dispatchEvent(new Event('resize'));
-    };
-    // Switch to dark mode if need be
-    if (hasAlternateSentinel()) {
-      toggleColorMode(true);
-    } else {
-      toggleColorMode(false);
-    }
-  </script>
+<body class="nav-sidebar floating quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -252,7 +87,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./Introduction to RavenPro.html">Getting started in RavenPro</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./Introduction to RavenPro.html">Introduction to RavenPro</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -260,9 +95,6 @@ ul.task-list li input[type="checkbox"] {
       </button>
     </div>
   </nav>
-  <div id="quarto-announcement" data-announcement-id="69e707a8eb183828eb1277c105cb3048" class="alert alert-primary hidden"><i class="bi bi-info-circle quarto-announcement-icon"></i><div class="quarto-announcement-content">
-<p><strong>Alert</strong> - If you or someone you know would like to get involved with the project please reach out to jelias4@bingahmton.edu to inquire about possible opportunities.</p>
-</div><i class="bi bi-x-lg quarto-announcement-action"></i></div>
 </header>
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
@@ -271,9 +103,6 @@ ul.task-list li input[type="checkbox"] {
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
       <a href="./">Orthoptera Bioacoustics Docs</a> 
-        <div class="sidebar-tools-main">
-  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
-</div>
     </div>
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
@@ -291,38 +120,32 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Analog Digitization.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Analog digitization</span></a>
+  <a href="./about.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">About</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./Introduction to RavenPro.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Getting started in RavenPro</span></a>
+ <span class="menu-text">Introduction to RavenPro</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Analog Digitization.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Analog Digitization</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./Tutorial.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Annotations tutorial</span></a>
+ <span class="menu-text">Tutorial</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./Resources.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Project resources</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./ID Blog.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">ID Help | Blog</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./about.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">About</span></a>
+ <span class="menu-text">Resources</span></a>
   </div>
 </li>
     </ul>
@@ -335,7 +158,8 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#importing-sound-files" id="toc-importing-sound-files" class="nav-link active" data-scroll-target="#importing-sound-files">Importing sound files</a></li>
+  <li><a href="#getting-started-in-ravenpro" id="toc-getting-started-in-ravenpro" class="nav-link active" data-scroll-target="#getting-started-in-ravenpro">Getting started in RavenPro</a></li>
+  <li><a href="#importing-sound-files" id="toc-importing-sound-files" class="nav-link" data-scroll-target="#importing-sound-files">Importing sound files</a></li>
   <li><a href="#spectrogram-and-waveform" id="toc-spectrogram-and-waveform" class="nav-link" data-scroll-target="#spectrogram-and-waveform">Spectrogram and waveform</a></li>
   <li><a href="#color-and-zoom-settings" id="toc-color-and-zoom-settings" class="nav-link" data-scroll-target="#color-and-zoom-settings">Color and zoom settings</a></li>
   <li><a href="#selection-table" id="toc-selection-table" class="nav-link" data-scroll-target="#selection-table">Selection table</a></li>
@@ -348,10 +172,9 @@ ul.task-list li input[type="checkbox"] {
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Getting started in RavenPro</h1>
+<h1 class="title">Introduction to RavenPro</h1>
 </div>
 
 
@@ -368,21 +191,24 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<section id="getting-started-in-ravenpro" class="level1">
+<h1>Getting started in RavenPro</h1>
 <p>Raven Pro is a software program for the acquisition, visualization, measurement, and analysis of sounds developed by the <a href="https://www.birds.cornell.edu/ccb/raven-pro/">K. Lisa Yang Center for Conservation Bioacoustics</a> at the Cornell Lab of Ornithology. Open RavenPro, which will have an a desktop icon like this: <img src="images/RavenPro_Intro/ravenpro_logo.jpg" class="img-fluid" width="60"></p>
-<p>RavenPro should open to a blank workbench (Fig 1).</p>
+<p>RavenPro should open to a blank workbench (Figure 1).</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/RavenPro_Intro/open_ravenpro.jpg" class="img-fluid figure-img"></p>
-<figcaption>Fig 1. Opening screen on the RavenPro software.</figcaption>
+<figcaption>Figure 1. Opening screen on the RavenPro software.</figcaption>
 </figure>
 </div>
 <p>There are many components and configurations for the RavenPro software. Included in these docs are the main components that we’ll use. For a more detailed tutorial of RavenPro, please see its <a href="https://ravensoundsoftware.com/wp-content/uploads/2017/11/Raven14UsersManual.pdf">user manual</a>.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/RavenPro_Intro/components.jpg" class="img-fluid figure-img"></p>
-<figcaption>Fig 2. The main components of RavenPro.</figcaption>
+<figcaption>Figure 2. The main components of RavenPro.</figcaption>
 </figure>
 </div>
+</section>
 <section id="importing-sound-files" class="level1">
 <h1>Importing sound files</h1>
 <p>Annotators will receive learning sets of recordings inside a hard drive titled <em>Cricket Recordings/Annotations_S26</em>. Each annotator will have a directory with their name. Inside their named directory will be a list of recordings specifically assigned to them. For now navigate to the directory <em>learning_recordings</em> with labeled directories <em>t1-t4.</em></p>
@@ -390,7 +216,7 @@ ul.task-list li input[type="checkbox"] {
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/RavenPro_Intro/open_sound.jpg" class="img-fluid figure-img"></p>
-<figcaption>Fig 3. Open sound files in RavenPro.</figcaption>
+<figcaption>Figure 3. Open sound files in RavenPro.</figcaption>
 </figure>
 </div>
 <p>Do not alter any default settings. Click <code>continue</code>. The original file will show doubles of the recording, and the waveform and spectrogram. Uncheck channel 2 on the side panel. Note: sometimes channel 2 has a much stronger signal than channel 1. If this is the case use channel 2.</p>
@@ -402,7 +228,7 @@ ul.task-list li input[type="checkbox"] {
 <div class="quarto-figure quarto-figure-right">
 <figure class="figure">
 <p><img src="images/RavenPro_Intro/spectrogram_waveform.jpg" class="img-fluid figure-img"></p>
-<figcaption>Fig 4. Display of the spectrogram and waveform with the channel 2 and waveform unchecked. For easy viewing during the first pass of the recording it’s okay to uncheck the waveform and keep it unchecked until you need it.</figcaption>
+<figcaption>Figure 4. Display of the spectrogram and waveform with the channel 2 and waveform unchecked. For easy viewing during the first pass of the recording it’s okay to uncheck the waveform and keep it unchecked until you need it.</figcaption>
 </figure>
 </div>
 </section>
@@ -412,7 +238,7 @@ ul.task-list li input[type="checkbox"] {
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/RavenPro_Intro/color.jpg" class="img-fluid figure-img"></p>
-<figcaption>Fig 5. Drop down menu for color options.</figcaption>
+<figcaption>Figure 5. Drop down menu for color options.</figcaption>
 </figure>
 </div>
 <p>Zoom the spectrogram window as needed. This isn’t mandatory but is reccomended since some species might need to be boxed in sections if their calling is inconsistent; the same species’ signal spaced more than 3 seconds apart from each other.</p>
@@ -420,7 +246,7 @@ ul.task-list li input[type="checkbox"] {
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/RavenPro_Intro/zppm2.jpg" class="img-fluid figure-img"></p>
-<figcaption>Fig 6. Two modes of zooming the spectrogram and/or waveform. (1) click in the window (spectrogram or waveform); (2) use the zoom button in the top panel or bottom right corner of the RavenPro window. The <code>|--|</code> button in the bottom right window will reset the zoom to its default.</figcaption>
+<figcaption>Figure 6. Two modes of zooming the spectrogram and/or waveform. (1) click in the window (spectrogram or waveform); (2) use the zoom button in the top panel or bottom right corner of the RavenPro window. The <code>|--|</code> button in the bottom right window will reset the zoom to its default.</figcaption>
 </figure>
 </div>
 </section>
@@ -431,7 +257,7 @@ ul.task-list li input[type="checkbox"] {
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/RavenPro_Intro/selection_table.jpg" class="img-fluid figure-img"></p>
-<figcaption>Fig 7. Editing the selection table for Orthoptera annotations.</figcaption>
+<figcaption>Figure 7. Editing the selection table for Orthoptera annotations.</figcaption>
 </figure>
 </div>
 <p>If you need to delete a selection, right click the selection in the table and choose <strong><em>Clear Active Selections</em></strong>.</p>
@@ -449,7 +275,7 @@ ul.task-list li input[type="checkbox"] {
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/RavenPro_Intro/sound_bar.jpg" class="img-fluid figure-img"></p>
-<figcaption>Fig 9. Increase or decrease sound levels only within the RavenPro software.</figcaption>
+<figcaption>Figure 9. Increase or decrease sound levels only within the RavenPro software.</figcaption>
 </figure>
 </div>
 </section>
@@ -459,27 +285,27 @@ ul.task-list li input[type="checkbox"] {
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/RavenPro_Intro/selection_tool.jpg" class="img-fluid figure-img" width="195"></p>
-<figcaption>Fig 10. Selection tool used to draw a box around an acoustic signal. Bonus: the pointer finger icon allows the user to select a boxed signal to edit its extent and position. The same thing can be accomplished by clicking the selection in the selection table.</figcaption>
+<figcaption>Figure 10. Selection tool used to draw a box around an acoustic signal. Bonus: the pointer finger icon allows the user to select a boxed signal to edit its extent and position. The same thing can be accomplished by clicking the selection in the selection table.</figcaption>
 </figure>
 </div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/RavenPro_Intro/selection.jpg" class="img-fluid figure-img"></p>
-<figcaption>Fig 11. An example of a boxed acoustic signal. Notice how tight I boxed the signal. Leave out the reverberations—the portion of the signal that fades as the energy dissipates. We’re interested in the primary signal that’s emitted by the Orthopteran stridulation.</figcaption>
+<figcaption>Figure 11. An example of a boxed acoustic signal. Notice how tight I boxed the signal. Leave out the reverberations—the portion of the signal that fades as the energy dissipates. We’re interested in the primary signal that’s emitted by the Orthopteran stridulation.</figcaption>
 </figure>
 </div>
 <p>Once a box is drawn around a signal, press <code>enter</code>. A popup box will appear—either press <code>enter</code> again and create an empty selection in the selection table, or directly enter the ID and alternative ID, if necessary, and then press <code>enter</code> to add to the selection table.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/RavenPro_Intro/selection_box.jpg" class="img-fluid figure-img"></p>
-<figcaption>Fig 12. Selection pop-up that needs to be saved (press enter) to the selection table. Otherwise, once another selection is made, the previous one will disappear. To change this workflow, uncheck the option that says “Show this dialog whenever a selection is committed.</figcaption>
+<figcaption>Figure 12. Selection pop-up that needs to be saved (press enter) to the selection table. Otherwise, once another selection is made, the previous one will disappear. To change this workflow, uncheck the option that says “Show this dialog whenever a selection is committed.</figcaption>
 </figure>
 </div>
 <p>When entering an ID, put the primary ID in the <strong>Annotation</strong> column and the secondary ID—if there is one—in the <strong>Notes</strong> column. IDs should be formatted as <em>Genus_species</em>—case sensitive. If there are more than one alternative ID, format the entry <em>Genus_species_or_Genus_species</em>.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/RavenPro_Intro/ID_selection.jpg" class="img-fluid figure-img"></p>
-<figcaption>Fig 13. Proper formatting for an ID. This specific signal has no other species within the frequency range that sounds similar, so the <strong>Notes</strong> column is left empty.</figcaption>
+<figcaption>Figure 13. Proper formatting for an ID. This specific signal has no other species within the frequency range that sounds similar, so the <strong>Notes</strong> column is left empty.</figcaption>
 </figure>
 </div>
 <p>At the lower frequencies the alternative ID might sometimes be <em>frog</em>. Some toad and <em>Oecanthus</em> species sound similar. If you’re unsure of the specific species it’s okay to only enter the genus. For instance, <em>Oecanthus</em> is almost always just entered as <em>Oecanthus</em>. The species in this genus have very similar stridulation patterns in the same frequency range. For more on this, continue to the <strong>Tutorial</strong> page.</p>
@@ -490,7 +316,7 @@ ul.task-list li input[type="checkbox"] {
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/RavenPro_Intro/save_selection.jpg" class="img-fluid figure-img"></p>
-<figcaption>Fig 14. Save the selection table as the default name—the same name as its corresponding sound file. It’s important to check the directory to which the file is being saved. RavenPro will open random folders under <em>Save in:</em> .</figcaption>
+<figcaption>Figure 14. Save the selection table as the default name—the same name as its corresponding sound file. It’s important to check the directory to which the file is being saved. RavenPro will open random folders under <em>Save in:</em> .</figcaption>
 </figure>
 </div>
 <p><img src="images/cricket.jpg" class="img-fluid"></p>
@@ -501,19 +327,6 @@ ul.task-list li input[type="checkbox"] {
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
-    // Ensure there is a toggle, if there isn't float one in the top right
-    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
-      const a = window.document.createElement('a');
-      a.classList.add('top-right');
-      a.classList.add('quarto-color-scheme-toggle');
-      a.href = "";
-      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
-      const i = window.document.createElement("i");
-      i.classList.add('bi');
-      a.appendChild(i);
-      window.document.body.appendChild(a);
-    }
-    setColorSchemeToggle(hasAlternateSentinel())
     const icon = "";
     const anchorJS = new window.AnchorJS();
     anchorJS.options = {

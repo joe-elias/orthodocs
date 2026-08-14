@@ -1,31 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://joe-elias.github.io/orthodocs/Resources.html</loc>
-    <lastmod>2026-08-13T19:25:29.009Z</lastmod>
-  </url>
-  <url>
-    <loc>https://joe-elias.github.io/orthodocs/ID Blog.html</loc>
-    <lastmod>2026-08-13T20:37:12.777Z</lastmod>
+    <loc>https://joe-elias.github.io/orthodocs/Analog Digitization.html</loc>
+    <lastmod>2026-08-14T13:54:03.192Z</lastmod>
   </url>
   <url>
     <loc>https://joe-elias.github.io/orthodocs/index.html</loc>
-    <lastmod>2026-08-13T19:34:27.686Z</lastmod>
-  </url>
-  <url>
-    <loc>https://joe-elias.github.io/orthodocs/Introduction to RavenPro.html</loc>
-    <lastmod>2026-08-13T17:38:57.438Z</lastmod>
-  </url>
-  <url>
-    <loc>https://joe-elias.github.io/orthodocs/Tutorial.html</loc>
-    <lastmod>2026-08-13T19:24:29.421Z</lastmod>
+    <lastmod>2026-08-14T13:54:03.434Z</lastmod>
   </url>
   <url>
     <loc>https://joe-elias.github.io/orthodocs/about.html</loc>
-    <lastmod>2026-08-13T19:22:42.229Z</lastmod>
+    <lastmod>2026-08-14T13:54:03.305Z</lastmod>
   </url>
   <url>
-    <loc>https://joe-elias.github.io/orthodocs/Analog Digitization.html</loc>
-    <lastmod>2026-08-13T17:31:52.609Z</lastmod>
+    <loc>https://joe-elias.github.io/orthodocs/Resources.html</loc>
+    <lastmod>2026-08-14T13:54:03.192Z</lastmod>
+  </url>
+  <url>
+    <loc>https://joe-elias.github.io/orthodocs/Introduction to RavenPro.html</loc>
+    <lastmod>2026-08-14T13:54:03.192Z</lastmod>
+  </url>
+  <url>
+    <loc>https://joe-elias.github.io/orthodocs/Tutorial.html</loc>
+    <lastmod>2026-08-14T13:54:03.192Z</lastmod>
   </url>
 </urlset>
