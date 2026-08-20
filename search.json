@@ -14,7 +14,7 @@
     "href": "OrthoID.html",
     "title": "OrthoID",
     "section": "",
-    "text": "A Shiny App for learning audibly different orthopteran songs\nDeveloped by Joe Elias and Jennifer Slater\nThe goal of OrthoID is to test the listener on their knowledge of orthopteran songs. Some orthopterans can be audibly separated, while others need to be identified using sound analysis software. For the time being, OrthoID targets the former\nComing soon!",
+    "text": "A Shiny App for learning audibly different orthopteran songs\nDeveloped by Joe Elias and Jennifer Slater\nThe goal of OrthoID is to test the listener on their knowledge of orthopteran songs. Some orthopterans can be audibly separated, while others need to be identified using sound analysis software. For the time being OrthoID targets the former.\nComing soon!",
     "crumbs": [
       "OrthoID"
     ]
