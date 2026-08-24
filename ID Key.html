@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Getting started in RavenPro – Orthoptera Bioacoustics Docs</title>
+<title>ID Key – Orthoptera Bioacoustics Docs</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -252,7 +252,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./Introduction to RavenPro.html">Getting started in RavenPro</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./ID Key.html">ID Key</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -288,7 +288,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Introduction to RavenPro.html" class="sidebar-item-text sidebar-link active">
+  <a href="./Introduction to RavenPro.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Getting started in RavenPro</span></a>
   </div>
 </li>
@@ -306,7 +306,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./ID Key.html" class="sidebar-item-text sidebar-link">
+  <a href="./ID Key.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">ID Key</span></a>
   </div>
 </li>
@@ -338,13 +338,11 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#importing-sound-files" id="toc-importing-sound-files" class="nav-link active" data-scroll-target="#importing-sound-files">Importing sound files</a></li>
-  <li><a href="#spectrogram-and-waveform" id="toc-spectrogram-and-waveform" class="nav-link" data-scroll-target="#spectrogram-and-waveform">Spectrogram and waveform</a></li>
-  <li><a href="#color-and-zoom-settings" id="toc-color-and-zoom-settings" class="nav-link" data-scroll-target="#color-and-zoom-settings">Color and zoom settings</a></li>
-  <li><a href="#selection-table" id="toc-selection-table" class="nav-link" data-scroll-target="#selection-table">Selection table</a></li>
-  <li><a href="#play-sound-in-ravenpro" id="toc-play-sound-in-ravenpro" class="nav-link" data-scroll-target="#play-sound-in-ravenpro">Play sound in RavenPro</a></li>
-  <li><a href="#annotate-acoustic-signals" id="toc-annotate-acoustic-signals" class="nav-link" data-scroll-target="#annotate-acoustic-signals">Annotate acoustic signals</a></li>
-  <li><a href="#saving-a-selection-table" id="toc-saving-a-selection-table" class="nav-link" data-scroll-target="#saving-a-selection-table">Saving a selection table</a></li>
+  <li><a href="#workflow-key-for-singing-orthopterans" id="toc-workflow-key-for-singing-orthopterans" class="nav-link active" data-scroll-target="#workflow-key-for-singing-orthopterans">Workflow key for singing orthopterans</a></li>
+  <li><a href="#start" id="toc-start" class="nav-link" data-scroll-target="#start">Start</a>
+  <ul class="collapse">
+  <li><a href="#annotate-an-acoustic-signal" id="toc-annotate-an-acoustic-signal" class="nav-link" data-scroll-target="#annotate-an-acoustic-signal">Annotate an acoustic signal</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -354,7 +352,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Getting started in RavenPro</h1>
+<h1 class="title">ID Key</h1>
 </div>
 
 
@@ -371,134 +369,30 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Raven Pro is a software program for the acquisition, visualization, measurement, and analysis of sounds developed by the <a href="https://www.birds.cornell.edu/ccb/raven-pro/">K. Lisa Yang Center for Conservation Bioacoustics</a> at the Cornell Lab of Ornithology. Open RavenPro, which will have an a desktop icon like this: <img src="images/RavenPro_Intro/ravenpro_logo.jpg" class="img-fluid" width="60"></p>
-<p>RavenPro should open to a blank workbench (Fig 1).</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/RavenPro_Intro/open_ravenpro.jpg" class="img-fluid figure-img"></p>
-<figcaption>Fig 1. Opening screen on the RavenPro software.</figcaption>
-</figure>
-</div>
-<p>There are many components and configurations for the RavenPro software. Included in these docs are the main components that we’ll use. For a more detailed tutorial of RavenPro, please see its <a href="https://ravensoundsoftware.com/wp-content/uploads/2017/11/Raven14UsersManual.pdf">user manual</a>.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/RavenPro_Intro/components.jpg" class="img-fluid figure-img"></p>
-<figcaption>Fig 2. The main components of RavenPro.</figcaption>
-</figure>
-</div>
-<section id="importing-sound-files" class="level1">
-<h1>Importing sound files</h1>
-<p>Annotators will receive learning sets of recordings inside a hard drive titled <em>Cricket Recordings/Annotations_S26</em>. Each annotator will have a directory with their name. Inside their named directory will be a list of recordings specifically assigned to them. For now navigate to the directory <em>learning_recordings</em> with labeled directories <em>t1-t4.</em></p>
-<p>To open a recording, click <code>file</code> &gt; <code>open sound recordings</code> and navigate to the directory with your training recordings—they’ll be <em>.wav</em> format (Figure 3).</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/RavenPro_Intro/open_sound.jpg" class="img-fluid figure-img"></p>
-<figcaption>Fig 3. Open sound files in RavenPro.</figcaption>
-</figure>
-</div>
-<p>Do not alter any default settings. Click <code>continue</code>. The original file will show doubles of the recording, and the waveform and spectrogram. Uncheck channel 2 on the side panel. Note: sometimes channel 2 has a much stronger signal than channel 1. If this is the case use channel 2.</p>
+<section id="workflow-key-for-singing-orthopterans" class="level1">
+<h1>Workflow key for singing orthopterans</h1>
+<p>If it helps, follow this key generally. No identification should be made solely on the frequency, sound, or morphology of the acoustic signal. Please use this workflow alongside the naturalist accounts available in the <a href="https://joe-elias.github.io/orthodocs/ID%20Blog.html"><strong>ID Help | Blog page</strong></a> or the <a href="https://joe-elias.github.io/orthodocs/Resources.html"><strong>Project Resources</strong></a> page.</p>
 </section>
-<section id="spectrogram-and-waveform" class="level1">
-<h1>Spectrogram and waveform</h1>
-<p>The <strong>spectrogram</strong> is the primary panel that we’ll view when a sound file is played. The spectrogram represents the frequency of the calls (y-axis) across time (x-axis). The color of the call in the spectrogram represents the power (energy) emitted in the recording at each point in time. The color can be changed—black/white/gray tones might be the easiest to work with.</p>
-<p>The <strong>waveform</strong> displays an oscillogram showing amplitude (y-axis) across time (x-axis). This will be extremely useful for similar sounding Orthopterans. We can use the oscillogram to view chirp and pulse rate—the time between chirps (ch/s) and between pulses in a single chirp (ps/ch) which might be important for IDs. More on this later!</p>
-<div class="quarto-figure quarto-figure-right">
-<figure class="figure">
-<p><img src="images/RavenPro_Intro/spectrogram_waveform.jpg" class="img-fluid figure-img"></p>
-<figcaption>Fig 4. Display of the spectrogram and waveform with the channel 2 and waveform unchecked. For easy viewing during the first pass of the recording it’s okay to uncheck the waveform and keep it unchecked until you need it.</figcaption>
-</figure>
-</div>
-</section>
-<section id="color-and-zoom-settings" class="level1">
-<h1>Color and zoom settings</h1>
-<p>There are different colors available to view the spectrogram. The grayscale or jet (default) option might be the easiest/most consistent color to use.</p>
+<section id="start" class="level1">
+<h1>Start</h1>
+<section id="annotate-an-acoustic-signal" class="level2">
+<h2 class="anchored" data-anchor-id="annotate-an-acoustic-signal">Annotate an acoustic signal</h2>
+<p>Draw a box around a call. Make sure the box covers only the dark regions (strongest signal) and avoids reverberations above or below the main energy signal. Example:</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="images/RavenPro_Intro/color.jpg" class="img-fluid figure-img"></p>
-<figcaption>Fig 5. Drop down menu for color options.</figcaption>
+<p><img src="images/ID key/annotate.png" class="img-fluid figure-img"></p>
+<figcaption>Fig 1. Draw a box around the acoustic signal, large enough to capture the signal but small enough to remove any noise.</figcaption>
 </figure>
 </div>
-<p>Zoom the spectrogram window as needed. This isn’t mandatory but is reccomended since some species might need to be boxed in sections if their calling is inconsistent; the same species’ signal spaced more than 3 seconds apart from each other.</p>
-<p><img src="images/RavenPro_Intro/zoom.jpg" class="img-fluid"></p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/RavenPro_Intro/zppm2.jpg" class="img-fluid figure-img"></p>
-<figcaption>Fig 6. Two modes of zooming the spectrogram and/or waveform. (1) click in the window (spectrogram or waveform); (2) use the zoom button in the top panel or bottom right corner of the RavenPro window. The <code>|--|</code> button in the bottom right window will reset the zoom to its default.</figcaption>
-</figure>
-</div>
-</section>
-<section id="selection-table" class="level1">
-<h1>Selection table</h1>
-<p>Editing the selection table is critical for annotating acoustic signals for this project. (1) right click the empty space next to the table columns and choose add annotation column; (2) name one column <strong><em>Annotation</em></strong> and another <strong><em>Notes.</em></strong> Keep both case sensitive. <strong><em>Annotation</em></strong> will recieve your primary ID. <strong><em>Notes</em></strong> will receive the alternative ID (if applicable).</p>
-<p>Click on the right of the selection table and choose Measurements. Add <strong><em>95% Frequency</em></strong> to the table. The low and high frequency which corresponds to the species ID will vary depending on the person annotating. The <strong><em>95% Frequency</em></strong> column will account for individual differences between annotators.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/RavenPro_Intro/selection_table.jpg" class="img-fluid figure-img"></p>
-<figcaption>Fig 7. Editing the selection table for Orthoptera annotations.</figcaption>
-</figure>
-</div>
-<p>If you need to delete a selection, right click the selection in the table and choose <strong><em>Clear Active Selections</em></strong>.</p>
-</section>
-<section id="play-sound-in-ravenpro" class="level1">
-<h1>Play sound in RavenPro</h1>
-<p>The controls for playing sound are located on the top toolbars (Figure 2). <code>Play</code> will start playing the recording continuously until paused. <code>Play Visible</code> will play the entire frequency range within the time series window. As the sound plays, a line moves across the spectrogram and waveform. For more information see the RavenPro manual, but we will mostly use <code>Play Visible</code> and <code>Filtered Play</code>. Once a signal is boxed, we can use <code>Filtered Play</code> to omit any sound that occurs outside of our selected box and then when we select <code>Play Visible</code>, it will only play the boxed signal. <u>This workflow is essentially the primary tools you will need to listen and isolate sound to make an accurate ID. We will revisit this on the <strong>Tutorial</strong> page.</u></p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/RavenPro_Intro/sound.jpg" class="img-fluid figure-img"></p>
-<figcaption>Figure 8. Playback tool bar which is located at the top of the RavenPro window (Charif, Waak, and Strickman 2010). The volume setting is positioned next to the play settings.</figcaption>
-</figure>
-</div>
-<p>Recordings can be quieter than the sample recordings online, that are used to ID. Its recommended to turn up the volume within RavenPro and keep the volume at a reasonable level on the computer so that you don’t blow your eardrums every time you switch between software!</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/RavenPro_Intro/sound_bar.jpg" class="img-fluid figure-img"></p>
-<figcaption>Fig 9. Increase or decrease sound levels only within the RavenPro software.</figcaption>
-</figure>
-</div>
-</section>
-<section id="annotate-acoustic-signals" class="level1">
-<h1>Annotate acoustic signals</h1>
-<p>Use the selection tool to draw a box around an acoustic signal. The box should be drawn using the selection tool <code>+</code> located on the top toolbar.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/RavenPro_Intro/selection_tool.jpg" class="img-fluid figure-img" width="195"></p>
-<figcaption>Fig 10. Selection tool used to draw a box around an acoustic signal. Bonus: the pointer finger icon allows the user to select a boxed signal to edit its extent and position. The same thing can be accomplished by clicking the selection in the selection table.</figcaption>
-</figure>
-</div>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/RavenPro_Intro/selection.jpg" class="img-fluid figure-img"></p>
-<figcaption>Fig 11. An example of a boxed acoustic signal. Notice how tight I boxed the signal. Leave out the reverberations—the portion of the signal that fades as the energy dissipates. We’re interested in the primary signal that’s emitted by the Orthopteran stridulation.</figcaption>
-</figure>
-</div>
-<p>Once a box is drawn around a signal, press <code>enter</code>. A popup box will appear—either press <code>enter</code> again and create an empty selection in the selection table, or directly enter the ID and alternative ID, if necessary, and then press <code>enter</code> to add to the selection table.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/RavenPro_Intro/selection_box.jpg" class="img-fluid figure-img"></p>
-<figcaption>Fig 12. Selection pop-up that needs to be saved (press enter) to the selection table. Otherwise, once another selection is made, the previous one will disappear. To change this workflow, uncheck the option that says “Show this dialog whenever a selection is committed.</figcaption>
-</figure>
-</div>
-<p>When entering an ID, put the primary ID in the <strong>Annotation</strong> column and the secondary ID—if there is one—in the <strong>Notes</strong> column. IDs should be formatted as <em>Genus_species</em>—case sensitive. If there are more than one alternative ID, format the entry <em>Genus_species_or_Genus_species</em>.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/RavenPro_Intro/ID_selection.jpg" class="img-fluid figure-img"></p>
-<figcaption>Fig 13. Proper formatting for an ID. This specific signal has no other species within the frequency range that sounds similar, so the <strong>Notes</strong> column is left empty.</figcaption>
-</figure>
-</div>
-<p>At the lower frequencies the alternative ID might sometimes be <em>frog</em>. Some toad and <em>Oecanthus</em> species sound similar. If you’re unsure of the specific species it’s okay to only enter the genus. For instance, <em>Oecanthus</em> is almost always just entered as <em>Oecanthus</em>. The species in this genus have very similar stridulation patterns in the same frequency range. For more on this, continue to the <strong>Tutorial</strong> page.</p>
-</section>
-<section id="saving-a-selection-table" class="level1">
-<h1>Saving a selection table</h1>
-<p>Finally, to save a selection table navigate to <code>file</code> &gt; <code>Save "Sound 1" selection table (table 1) as</code> and leave the name as default. The default should be the exact same name as the corresponding sound file but with ~<em>Table.1.selections.txt</em> attached to the end.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/RavenPro_Intro/save_selection.jpg" class="img-fluid figure-img"></p>
-<figcaption>Fig 14. Save the selection table as the default name—the same name as its corresponding sound file. It’s important to check the directory to which the file is being saved. RavenPro will open random folders under <em>Save in:</em> .</figcaption>
-</figure>
-</div>
-<p><img src="images/cricket.jpg" class="img-fluid"></p>
+<ol type="1">
+<li><p>Call type: Is it a chirp or a trill? Check the “Call Type” column in the <a href="https://docs.google.com/spreadsheets/d/1klMWGWtpvWHylVUaaB9nnBOiFvXm6wb4ZrrdUU_eoO0/edit?usp=sharing"><strong>Orthoptera Song Guide</strong></a> for examples.</p>
+<p>a. If it’s a chirp, <strong>continue to&nbsp; 2</strong>.&nbsp;</p>
+<p>b. If it’s a trill, <strong>continue to 5</strong>.&nbsp;</p>
+<p>c. I’m not sure. <strong>Seek help</strong> → (jelias4@binghamton.edu)</p></li>
+</ol>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
